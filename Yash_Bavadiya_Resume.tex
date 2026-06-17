@@ -1,0 +1,335 @@
+%-------------------------
+% Resume in Latex
+% Author : Abey George
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+\usepackage{amsmath}
+
+
+
+\RequirePackage{tikz}
+\RequirePackage{xcolor}
+\RequirePackage{fontawesome}
+\usepackage{tikz}
+\usetikzlibrary{svg.path}
+
+
+\definecolor{cvblue}{HTML}{0E5484}
+\definecolor{black}{HTML}{130810}
+\definecolor{darkcolor}{HTML}{0F4539}
+\definecolor{cvgreen}{HTML}{3BD80D}
+\definecolor{taggreen}{HTML}{00E278}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{name}{black}
+\colorlet{tagline}{darkcolor}
+\colorlet{heading}{darkcolor}
+\colorlet{headingrule}{cvblue}
+\colorlet{accent}{darkcolor}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+% \pagestyle{fancy}
+% \fancyhf{}  % clear all header and footer fields
+% \fancyfoot{}
+% \renewcommand{\headrulewidth}{0pt}
+% \renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\small\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-5pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small#1} & \textbf{\small #2} \\
+      \text{\small#3} & \text{\small #4} \\
+      
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-12pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-8pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+\newcommand\sbullet[1][.5]{\mathbin{\vcenter{\hbox{\scalebox{#1}{$\bullet$}}}}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+
+\begin{center}
+    {\Huge \scshape Yash Bavadiya} \\ \vspace{1pt}
+    Surat, Gujarat \\ \vspace{1pt}
+    \small \href{tel:+91-9879163975}{\underline{+91-9879163975}} ~ 
+    \href{mailto:krbavadiya11@gmail.com}{\underline{krbavadiya11@gmail.com}} ~ 
+    \href{https://www.xevrion.dev/}{\underline{Portfolio}} ~ 
+    \href{https://linkedin.com/in/yash-bavadiya}
+    {\underline{LinkedIn}} ~
+    % \href{https://medium.com/@guptaarman910}{\underline{Medium}} ~
+    \href{https://github.com/xevrion}{\underline{GitHub}} ~
+    % \href{https://codeforces.com/profile/whoarryou}{\underline{CodeForces}} ~
+    \href{https://leetcode.com/u/xevrion/}{\underline{LeetCode}} ~ 
+    % \href{https://www.geeksforgeeks.org/user/guptaarkjjv/}{\underline{GeeksForGeeks}}
+\end{center}
+\vspace{-18pt}
+
+%-----------EDUCATION-----------
+\section{\large{EDUCATION}}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Indian Institute of Technology, Jodhpur}{Aug 2024 -- Jul 2028}
+      {\textbf{Bachelor's Degree} - Computer Science and Engineering - \textbf{CGPA} - \textbf{7.21}}{Jodhpur, Rajasthan}
+  \resumeSubHeadingListEnd
+  \vspace{-12pt}
+
+%------RELEVANT COURSEWORK-------
+
+\section{\large{TECHNICAL SKILLS}}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{\small{Languages:}}{  \small{C, C++, Python, JavaScript, TypeScript, MySQL}} \\ \vspace{1pt}
+     \textbf{\small{Technologies/Frameworks:}}{  \small{React, Next.js, Express, Prisma, Qt (C++), PostgreSQL, MongoDB, Redis, WebSockets, WebRTC, Firebase, Docker, Linux/UNIX environments, Relational Databases, REST APIs, TCP/IP} \\ \vspace{1pt}
+     \textbf{\small{Tools:}}{  \small{Git, Nginx, GitHub Actions, Vercel, Postman, VS Code}} \\
+    }}
+ \end{itemize}
+
+
+
+ \vspace{-18pt}
+%-----------EXPERIENCE-----------
+\section{\large{EXPERIENCE}}
+  \resumeSubHeadingListStart
+
+
+    \resumeSubheading
+      {\normalsize{\underline{Google Summer of Code 2026}} }{May 2026 -- Aug 2026} 
+      {{\normalsize{\textbf{\underline{Kdenlive @KDE Community}}}} $|$ Open Source Contributor, C++ and Qt}{Remote}
+      \vspace{-5pt}
+      \resumeItemListStart
+        \resumeItem{Selected for \textbf{GSoC 2026} among 1,200 global contributors; implementing Kdenlive's \textbf{RGB curve editor, gradient editor, and speed ramp widgets} in C++ and Qt under lead maintainer Jean-Baptiste Mardelle.}
+        \vspace{2pt}
+        \resumeItem{Merged \textbf{20 contributions} across Kdenlive, KDE Documentation, and MLT upstream; resolved an \textbf{11-year-old bug} via a union-of-intervals gap-detection algorithm shipping to \textbf{more than 41,000 monthly Flathub installs}.}
+
+  
+      \resumeItemListEnd  
+
+      \vspace{-2pt}
+
+        
+      
+
+      \resumeSubheading
+      {\normalsize{\underline{Undergraduate Researcher}} }{Jul 2025 -- Nov 2025} 
+      {{\normalsize{\textbf{\underline{Indian Institute of Technology, Jodhpur}}}} $|$ Supervisor: Dr. Pratik Mazumder}{IIT Jodhpur}
+      \vspace{-4pt}
+      \resumeItemListStart
+        \resumeItem {Developed a \textbf{fully offline RAG pipeline} integrating FAISS vector search with 4-bit quantized Phi-3 and Flan-T5-XL; fine-tuned model \textbf{outperformed base on all 8 ROUGE metrics}, achieving \textbf{+71.77\% average improvement}.}
+\vspace{3pt}
+        \resumeItem {Achieved \textbf{3 to 10 second query latency} on 50 to 300 page PDFs; deployed to \textbf{more than 15 IIT Jodhpur students} during semester exams across 3 feedback-driven chunking iterations.}
+  
+      \resumeItemListEnd  
+
+      \vspace{-17pt}
+  \resumeSubHeadingListEnd
+\vspace{4pt}
+
+
+%-----------PROJECTS-----------
+\section{\large{PROJECTS}}
+    \vspace{-4pt}
+    \resumeSubHeadingListStart
+    \vspace{-4pt}
+
+    \resumeProjectHeading
+    {\textbf{\normalsize{\underline{Peek-a-Repo}}} $|$ \href{https://github.com/xevrion/peek-a-repo}{\underline{GitHub}} $|$ \href{https://chromewebstore.google.com/detail/aanpngikpldepannbdkglfohenbkhomp}{\underline{Web Store}} $|$ \footnotesize{\textbf{TypeScript, GitHub GraphQL API, Webpack}}}{Feb 2026 -- May 2026}\\
+    \vspace{8pt}
+    \resumeItemListStart
+        \resumeItem{Published a Chrome extension on the Web Store rendering GitHub file contents inline on hover via GraphQL API and DOM injection; \textbf{88\% month-over-month growth} in store views across US, Japan, and India.}
+        \resumeItem{Implemented SHA-keyed cache with debounced fetch maintaining GitHub's \textbf{5,000 requests per hour} rate limit; \textbf{5 weekly active users} across Windows, Linux, and macOS with zero reported bugs.}
+    \resumeItemListEnd
+    \vspace{-18pt}
+
+     \resumeProjectHeading
+    {\textbf{\normalsize{\underline{DaemonDoc}}} $|$ \href{https://github.com/xevrion/DaemonDoc}{\underline{GitHub}} $|$ \href{https://daemondoc.online}{\underline{Live}} $|$ \footnotesize{\textbf{TypeScript, Express, MongoDB, Redis (BullMQ), Docker}}}{Jan 2026 -- May 2026}\\
+    \vspace{8pt}
+    \resumeItemListStart
+        \resumeItem{Automated README generation on every git push via GitHub Webhooks; \textbf{50 users, 68 active repositories, 959 automation runs} at \textbf{85\% success rate}; live at daemondoc.online with Razorpay subscription billing.}
+        \vspace{2pt}
+        \resumeItem{Architected a Redis (BullMQ) job pipeline with exponential backoff and 3-attempt fault tolerance; reduced per-repository token cost by \textbf{70\%} by filtering irrelevant source files before prompt construction.}
+    \resumeItemListEnd
+    \vspace{-17pt}
+
+
+    \resumeProjectHeading
+          {\textbf{\normalsize{\underline{IITJ PHC System}}} $|$ \href{https://github.com/xevrion/iitj-phc-system}{\underline{GitHub}} $|$ \footnotesize{\textbf{Node.js, Express, PostgreSQL, Prisma, JWT, LDAP, Docker}}}{Jan 2026 -- Apr 2026}\\
+          \vspace{8pt}
+          \resumeItemListStart
+            \resumeItem {Led backend architecture in a 3-member team; replaced IIT Jodhpur PHC's paper-based workflow with a permission-based platform: \textbf{6 roles, 63 endpoints, 20 database models, 2,505 lines of code} with JWT and LDAP dual authentication across 7 Scrum sprints.}
+            \vspace{2pt}
+        \resumeItem{Validated reliability via \textbf{48 test cases}, a 59-check smoke suite, and load tests at \textbf{20 concurrent users}; approved by professor for production deployment projecting \textbf{4 to 5 staff-hours saved per day}.}
+            
+          \resumeItemListEnd 
+      
+
+          
+         
+              \vspace{-15pt}
+          
+    \resumeSubHeadingListEnd
+% \vspace{-12pt}
+
+\vspace{6pt}
+
+
+
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{\large{COURSEWORK}}
+    %\resumeSubHeadingListStart
+        \begin{multicols}{3}
+            \begin{itemize}[itemsep=-4pt, parsep=4pt]
+        
+                \item\small Data Structures
+                \item\small Algorithms
+                \item\small Software Engineering
+            
+                \item\small Pattern Recognition
+                
+                % \item System Design
+                
+                \item\small Machine Learning
+                \item\small Discrete Mathematics
+                \item\small Probability
+            
+                \item\small Statistics and Stochastic Processes
+                \item\small Human Machine Interaction
+          
+                
+            \end{itemize}
+        \end{multicols}
+        \vspace*{2.0\multicolsep}
+    %\resumeSubHeadingListEnd
+ \vspace{1pt}
+
+
+ \section{\large{ACHIEVEMENTS}}
+      \vspace{-5pt}
+    \resumeSubHeadingListStart
+        % \resumeSubheading{Organization Name \href{Certificate Proof link}{\raisebox{-0.1\height}\faExternalLink } }{05-2021 -- 12-2021}{\underline{Role}}{Location}
+        
+            \resumeItemListStart
+                \resumeItem{JEE Advanced 2024: AIR \textbf{3449}; JEE Main 2024: \textbf{99.65} percentile, AIR \textbf{5680}.}
+                \resumeItem{Completed \textbf{Hacktoberfest 2025} with 6 merged pull requests across open-source repositories including Wagtail; received official completion kit.}
+                \resumeItem{\textbf{Bharti Airtel Scholar 2024} at IIT Jodhpur.}
+            \resumeItemListEnd
+    \resumeSubHeadingListEnd
+ \vspace{-15pt}
+
+ \section{\large{LEADERSHIP}}
+   \vspace{-6pt}
+    \resumeSubHeadingListStart
+        % \resumeSubheading{Organization Name \href{Certificate Proof link}{\raisebox{-0.1\height}\faExternalLink } }{05-2021 -- 12-2021}{\underline{Role}}{Location}
+        
+            \resumeItemListStart
+            \resumeItem{\textbf{Junior Core Team Member} at DevlUp Labs, IIT Jodhpur; contributed to open-source mentorship and workshops.}
+            \resumeItem{\textbf{Core Member} at E-Cell, IIT Jodhpur; supported entrepreneurship events and initiatives over 9 months.}
+            \resumeItem{\textbf{Core Member} at Programming Club, IIT Jodhpur; co-organized contests and sessions on competitive programming.}
+            \resumeItemListEnd
+    \resumeSubHeadingListEnd
+ \vspace{-15pt}
+ 
+ \end{document}
