@@ -1,7 +1,7 @@
 %-------------------------
 % Resume in Latex
-% Author : Abey George
-% Based off of: https://github.com/sb2nov/resume
+% Author : Yash Bavadiya
+% github: https://github.com/xevrion/resume
 % License : MIT
 %------------------------
 
@@ -15,6 +15,34 @@
 \usepackage{verbatim}
 \usepackage{enumitem}
 \usepackage[hidelinks]{hyperref}
+\usepackage{hyperxmp}
+
+\hypersetup{
+  pdftitle={Yash Bavadiya - Resume},
+  pdfauthor={Yash Bavadiya},
+  pdfauthortitle={Software Engineer},
+  pdfsubject={Software Engineer Resume - C++, TypeScript, Node.js, React},
+  pdfkeywords={
+    C, C++, Python, JavaScript, TypeScript, MySQL,
+    React, Next.js, Express, Prisma, Qt, PostgreSQL, MongoDB, Redis,
+    WebSockets, WebRTC, Firebase, Docker, Linux, UNIX, REST APIs, TCP/IP,
+    Git, Nginx, GitHub Actions, Vercel, Postman,
+    Data Structures, Algorithms, System Design, Distributed Systems,
+    Software Engineer, SDE, Full Stack, Backend, Frontend,
+    Surat, Jodhpur, India, Open to Work,
+    xevrion
+  },
+  pdfcreator={pdflatex},
+  pdfproducer={Yash Bavadiya},
+  pdflang={en-US},
+  pdfmetalang={en-US},
+  pdfcontactaddress={Surat - Gujarat - India},
+  pdfcontactemail={krbavadiya11@gmail.com},
+  pdfcontacturl={https://www.xevrion.dev/},
+  pdfcopyright={Copyright 2026-\the\year\ Yash Bavadiya.},
+  pdfurl={https://www.xevrion.dev/},
+  pdfpubtype={other},
+}
 \usepackage[english]{babel}
 \usepackage{tabularx}
 \usepackage{fontawesome5}
@@ -74,25 +102,12 @@
   }
 }
 
-\newcommand{\classesList}[4]{
-    \item\small{
-        {#1 #2 #3 #4 \vspace{-2pt}}
-  }
-}
-
 \newcommand{\resumeSubheading}[4]{
   \vspace{-2pt}\item
     \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{\small#1} & \textbf{\small #2} \\
       \text{\small#3} & \text{\small #4} \\
       
-    \end{tabular*}\vspace{-7pt}
-}
-
-\newcommand{\resumeSubSubheading}[2]{
-    \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textit{\small#1} & \textit{\small #2} \\
     \end{tabular*}\vspace{-7pt}
 }
 
@@ -112,11 +127,6 @@
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
-
-\newcommand\sbullet[1][.5]{\mathbin{\vcenter{\hbox{\scalebox{#1}{$\bullet$}}}}}
-
-%-------------------------------------------
-%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
 
@@ -143,7 +153,7 @@
   \resumeSubHeadingListEnd
   \vspace{-12pt}
 
-%------RELEVANT COURSEWORK-------
+%------TECHNICAL SKILLS-------
 
 \section{\large{TECHNICAL SKILLS}}
  \begin{itemize}[leftmargin=0.15in, label={}]
@@ -165,9 +175,9 @@
       {{\normalsize{\textbf{\underline{Kdenlive @KDE Community}}}} $|$ Open Source Contributor, C++ and Qt}{Remote}
       \vspace{-5pt}
       \resumeItemListStart
-        \resumeItem{Secured selection for \textbf{GSoC 2026} among 1,200 global contributors; implementing Kdenlive's \textbf{RGB curve editor, gradient editor, and speed ramp widgets} in C++ and Qt under lead maintainer Jean-Baptiste Mardelle.}
+        \resumeItem{Secured selection for \textbf{GSoC 2026} among 1,200 global contributors to implement Kdenlive's \textbf{RGB curve editor, gradient editor, and speed ramp widgets} in C++ and Qt.}
         \vspace{2pt}
-        \resumeItem{Integrated \textbf{20 contributions} across Kdenlive, KDE Documentation, and Media Lovin' Toolkit upstream; resolved an \textbf{11-year-old bug} via a union-of-intervals gap-detection algorithm shipping to \textbf{41,000 monthly Flathub installs}.}
+        \resumeItem{Integrated \textbf{20 contributions} across Kdenlive and upstream repositories, resolving an \textbf{11-year-old bug} via a gap-detection algorithm shipping to \textbf{41,000 monthly Flathub installs}.}
       \resumeItemListEnd
 
       \vspace{-2pt}
@@ -177,9 +187,9 @@
       {{\normalsize{\textbf{\underline{Indian Institute of Technology, Jodhpur}}}} $|$ Supervisor: Dr. Pratik Mazumder}{IIT Jodhpur}
       \vspace{-4pt}
       \resumeItemListStart
-        \resumeItem {Engineered an offline \textbf{Retrieval-Augmented Generation pipeline} integrating FAISS vector search with 4-bit quantized Phi-3 and Flan-T5-XL; fine-tuned model \textbf{outperformed base on all 8 ROUGE metrics}, achieving \textbf{+71.77\% average improvement}.}
+        \resumeItem {Engineered an offline \textbf{Retrieval-Augmented Generation pipeline} integrating FAISS vector search with 4-bit quantized Phi-3 and Flan-T5-XL, achieving a \textbf{+71.77\% average improvement} across 8 ROUGE metrics.}
         \vspace{3pt}
-        \resumeItem {Attained \textbf{3 second query latency} on 300 page PDFs; deployed to \textbf{15 IIT Jodhpur students} during semester exams across 3 feedback-driven chunking iterations.}
+        \resumeItem {Attained \textbf{3 second query latency} on 300-page PDFs and deployed the solution to \textbf{15 IIT Jodhpur students} during semester exams across 3 feedback-driven iterations.}
       \resumeItemListEnd  
 
       \vspace{-17pt}
@@ -196,9 +206,9 @@
     {\textbf{\normalsize{\underline{Peek-a-Repo}}} $|$ \href{https://github.com/xevrion/peek-a-repo}{\underline{GitHub}} $|$ \href{https://chromewebstore.google.com/detail/aanpngikpldepannbdkglfohenbkhomp}{\underline{Web Store}} $|$ \footnotesize{\textbf{TypeScript, GitHub GraphQL API, Webpack}}}{Feb 2026 -- May 2026}\\
     \vspace{8pt}
     \resumeItemListStart
-        \resumeItem{Deployed a Chrome extension on the Web Store rendering GitHub file contents inline on hover via GraphQL API and \textbf{Document Object Model injection;} \textbf{88\% monthly growth} in store views across US, Japan, and India.}
-        \resumeItem{Programmed SHA-keyed cache with debounced fetch maintaining GitHub's \textbf{5,000 requests per hour} rate limit; \textbf{5 weekly active users} across Windows, Linux, and macOS with zero reported bugs.}
-        \resumeItem{Optimized via Webpack bundling, reducing package size by \textbf{60\%}; enforced content security policy headers and sandboxed execution to pass Chrome Web Store security review.}
+        \resumeItem{Deployed a Chrome extension rendering GitHub file contents inline via GraphQL API and \textbf{Document Object Model injection}, driving \textbf{88\% monthly growth} in international store views.}
+        \resumeItem{Programmed SHA-keyed cache with debounced fetch to maintain GitHub's \textbf{5,000 requests per hour} rate limit, supporting \textbf{5 weekly active users} cross-platform with zero reported bugs.}
+        \resumeItem{Optimized via Webpack bundling to reduce package size by \textbf{60\%}, enforcing content security policy headers and sandboxed execution to pass Web Store security review.}
     \resumeItemListEnd
     \vspace{-18pt}
 
@@ -206,11 +216,11 @@
     {\textbf{\normalsize{\underline{DaemonDoc}}} $|$ \href{https://github.com/xevrion/DaemonDoc}{\underline{GitHub}} $|$ \href{https://daemondoc.online}{\underline{Live}} $|$ \footnotesize{\textbf{TypeScript, Express, MongoDB, Redis (BullMQ), Docker}}}{Jan 2026 -- May 2026}\\
     \vspace{8pt}
     \resumeItemListStart
-        \resumeItem{Automated README generation on every git push via GitHub Webhooks; \textbf{50 users, 68 active repositories, 959 automation runs} at \textbf{85\% success rate}; live at daemondoc.online with subscription billing.}
+        \resumeItem{Automated README generation on every git push via GitHub Webhooks, achieving an \textbf{85\% success rate} across \textbf{959 automation runs} for \textbf{50 users} and 68 active repositories.}
         \vspace{2pt}
-        \resumeItem{Architected a Redis (BullMQ) job pipeline with exponential backoff and 3-attempt fault tolerance; reduced per-repository token cost by \textbf{70\%} by filtering irrelevant source files before prompt construction.}
+        \resumeItem{Architected a Redis (BullMQ) job pipeline with exponential backoff and fault tolerance, reducing token costs by \textbf{70\%} via source file filtering before prompt construction.}
         \vspace{2pt}
-        \resumeItem{Orchestrated \textbf{4 services} with Docker Compose; configured Nginx reverse proxy and GitHub Actions pipeline enabling zero-downtime deployments.}
+        \resumeItem{Orchestrated \textbf{4 services} with Docker Compose, configuring an Nginx reverse proxy and GitHub Actions pipeline to enable zero-downtime deployments.}
     \resumeItemListEnd
     \vspace{-17pt}
 
@@ -218,16 +228,16 @@
           {\textbf{\normalsize{\underline{IIT Jodhpur PHC System}}} $|$ \href{https://github.com/xevrion/iitj-phc-system}{\underline{GitHub}} $|$ \footnotesize{\textbf{Node.js, Express, Postgres, Prisma, Docker}}}{Jan 2026 -- Apr 2026}\\
           \vspace{8pt}
           \resumeItemListStart
-            \resumeItem {Spearheaded backend architecture in a 3-member team; replaced paper-based workflow with a permission-based platform: \textbf{6 roles, 63 endpoints, 20 database models} with JSON Web Token and LDAP dual authentication across 7 Scrum sprints.}
+            \resumeItem {Spearheaded backend architecture to replace a paper-based workflow with a permission-based platform featuring \textbf{6 roles, 63 endpoints, and 20 database models} using JSON Web Token and LDAP authentication.}
             \vspace{2pt}
-        \resumeItem{Verified reliability via \textbf{48 test cases}, a 59-check smoke suite, and load tests at \textbf{20 concurrent users}; approved by professor for production deployment projecting \textbf{5 staff-hours saved per day}.}
+        \resumeItem{Verified reliability via \textbf{48 test cases} and load tests at \textbf{20 concurrent users}, securing production deployment approval projecting \textbf{5 staff-hours saved per day}.}
           \resumeItemListEnd 
               \vspace{-15pt}
           
     \resumeSubHeadingListEnd
 \vspace{0pt}
 
-%-----------PROGRAMMING SKILLS-----------
+%-----------COURSEWORK-----------
 \section{\large{COURSEWORK}}
         \begin{multicols}{3}
             \begin{itemize}[itemsep=-4pt, parsep=4pt]
@@ -250,26 +260,24 @@
         \vspace*{2.0\multicolsep}
  \vspace{1pt}
 
+%-----------ACHIEVEMENTS-----------
  \section{\large{ACHIEVEMENTS}}
       \vspace{-5pt}
-    \resumeSubHeadingListStart
-            \resumeItemListStart
+          \begin{itemize}[leftmargin=0.15in]
                 \resumeItem{JEE Advanced 2024: AIR \textbf{3449}; JEE Main 2024: \textbf{99.65} percentile, AIR \textbf{5680}.}
                 \resumeItem{Completed \textbf{Hacktoberfest 2025} with 6 merged pull requests across open-source repositories including Wagtail.}
                 \resumeItem{Awarded \textbf{Bharti Airtel Scholarship 2024} providing academic funding for 4 years at IIT Jodhpur.}
-            \resumeItemListEnd
-    \resumeSubHeadingListEnd
+          \end{itemize}
  \vspace{-15pt}
 
+%-----------LEADERSHIP-----------
  \section{\large{LEADERSHIP}}
    \vspace{-6pt}
-    \resumeSubHeadingListStart
-            \resumeItemListStart
-            \resumeItem{\textbf{Junior Core Team Member} at DevlUp Labs, IIT Jodhpur; mentored 30 students and facilitated 2 open-source workshops.}
-            \resumeItem{\textbf{Core Member} at E-Cell, IIT Jodhpur; supported 3 entrepreneurship events and initiatives over 9 months.}
-            \resumeItem{\textbf{Core Member} at Programming Club, IIT Jodhpur; co-organized 5 contests and 10 sessions on competitive programming.}
-            \resumeItemListEnd
-    \resumeSubHeadingListEnd
+          \begin{itemize}[leftmargin=0.15in]
+                \resumeItem{\textbf{Junior Core Team Member} at DevlUp Labs, IIT Jodhpur, mentoring 30 students and facilitating 2 open-source workshops.}
+                \resumeItem{\textbf{Core Member} at E-Cell, IIT Jodhpur, supporting 3 entrepreneurship events and initiatives over 9 months.}
+                \resumeItem{\textbf{Core Member} at Programming Club, IIT Jodhpur, co-organizing 5 contests and 10 sessions on competitive programming.}
+          \end{itemize}
  \vspace{-15pt}
  
  \end{document}
