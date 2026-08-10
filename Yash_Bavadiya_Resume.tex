@@ -21,15 +21,19 @@
   pdftitle={Yash Bavadiya - Resume},
   pdfauthor={Yash Bavadiya},
   pdfauthortitle={Software Engineer},
-  pdfsubject={Software Engineer Resume - C++, TypeScript, Node.js, React},
+  pdfsubject={Software Engineering Intern Resume - Python, TypeScript, Go, Distributed Systems, LLM Evaluation},
   pdfkeywords={
-    C, C++, Python, JavaScript, TypeScript, MySQL,
-    React, Next.js, Express, Prisma, Qt, PostgreSQL, MongoDB, Redis,
-    WebSockets, WebRTC, Firebase, Docker, Linux, UNIX, REST APIs, TCP/IP,
+    Python, TypeScript, Go, C, C++, JavaScript, SQL, MySQL, PostgreSQL,
+    React, Next.js, Node.js, Express, Prisma, Qt, MongoDB, Redis, Kafka, BullMQ,
+    Message Queues, Pub Sub, WebSockets, WebRTC, Firebase, Docker, AWS, S3,
+    Linux, UNIX, REST APIs, TCP/IP, Observability, Metrics, Logging,
     Git, Nginx, GitHub Actions, Vercel, Postman,
-    Data Structures, Algorithms, System Design, Distributed Systems,
-    Software Engineer, SDE, Full Stack, Backend, Frontend,
-    Surat, Jodhpur, India, Open to Work,
+    LLM, Large Language Models, Prompting, LLM Evaluation, RAG,
+    Retrieval Augmented Generation, FAISS, Vector Search, Information Extraction,
+    Regex, NLP, Agentic AI, Speech AI, Data Pipelines, Analytics,
+    Data Structures, Algorithms, System Design, Distributed Systems, Debugging,
+    Software Engineer, SDE, Software Engineering Intern, Backend, Full Stack,
+    Bangalore, Bengaluru, Surat, Jodhpur, India, Open to Work,
     xevrion
   },
   pdfcreator={pdflatex},
@@ -158,10 +162,11 @@
 \section{\large{TECHNICAL SKILLS}}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{\small{Languages:}}{  \small{C, C++, Python, JavaScript, TypeScript, MySQL}} \\ \vspace{1pt}
-     \textbf{\small{Technologies/Frameworks:}}{  \small{React, Next.js, Express, Prisma, Qt (C++), PostgreSQL, MongoDB, Redis, WebSockets, WebRTC, Firebase, Docker, Linux/UNIX environments, Relational Databases, REST APIs, TCP/IP}} \\ \vspace{1pt}
-     \textbf{\small{Tools:}}{  \small{Git, Nginx, GitHub Actions, Vercel, Postman, VS Code}} \\ \vspace{1pt}
-     \textbf{\small{Core Competencies:}}{  \small{Data Structures and Algorithms, Object-Oriented Programming, Operating Systems, System Design, Distributed Systems, REST APIs}} \\
+     \textbf{\small{Languages:}}{  \small{Python, TypeScript, JavaScript, C++, C, SQL}} \\ \vspace{1pt}
+     \textbf{\small{Backend \& Distributed Systems:}}{  \small{Node.js, Express, REST APIs, WebSockets, Redis (pub/sub, BullMQ), Message Queues, PostgreSQL, MySQL, MongoDB, Prisma, Docker, Nginx, Linux/UNIX, TCP/IP}} \\ \vspace{1pt}
+     \textbf{\small{AI \& Data:}}{  \small{LLM Prompting \& Evaluation, Retrieval-Augmented Generation, FAISS Vector Search, Hugging Face Transformers, Information Extraction, Regex/NLP, PyTorch, Pandas}} \\ \vspace{1pt}
+     \textbf{\small{Tools:}}{  \small{Git, GitHub Actions, Postman, Vercel, React, Next.js, Qt (C++), VS Code}} \\ \vspace{1pt}
+     \textbf{\small{Core Competencies:}}{  \small{Data Structures and Algorithms, Distributed Systems, System Design, Operating Systems, Debugging, Technical Writing (RFCs, PRs, incident notes)}} \\
     }}
  \end{itemize}
 
@@ -185,9 +190,9 @@
       {{\normalsize{\textbf{\underline{Indian Institute of Technology, Jodhpur}}}} $|$ Supervisor: Dr. Pratik Mazumder}{IIT Jodhpur}
       \vspace{-4pt}
       \resumeItemListStart
-        \resumeItem {Engineered an offline \textbf{Retrieval-Augmented Generation pipeline} integrating FAISS vector search with 4-bit quantized Phi-3 and Flan-T5-XL, achieving a \textbf{+71.77\% average improvement} across 8 ROUGE metrics.}
+        \resumeItem {Engineered an offline \textbf{Retrieval-Augmented Generation pipeline} in \textbf{Python}, integrating FAISS vector search with 4-bit quantized Phi-3 and Flan-T5-XL for document information extraction.}
         \vspace{3pt}
-        \resumeItem {Attained \textbf{3 second query latency} on 300-page PDFs and deployed the solution to \textbf{15 IIT Jodhpur students} during semester exams across 3 feedback-driven iterations.}
+        \resumeItem {Built an \textbf{LLM evaluation harness} benchmarking prompt and retrieval strategies across \textbf{8 ROUGE metrics} (\textbf{+71.77\%} over baseline), reaching \textbf{3 second query latency} on 300-page PDFs for \textbf{15 users}.}
       \resumeItemListEnd  
 
   \resumeSubHeadingListEnd
@@ -205,7 +210,7 @@
     \resumeItemListStart
         \resumeItem{Released 3 npm packages enabling multiplayer cursors and live presence in web applications via a \textbf{10-line integration}, installable as a \textbf{55MB} self-hosted Docker image or npx.}
         \vspace{2pt}
-        \resumeItem{Implemented Redis pub/sub message relay across server instances with keyspace-notification-driven user eviction, reducing stale presence state to under \textbf{30 seconds} on ungraceful disconnects.}
+        \resumeItem{Implemented a horizontally scalable \textbf{Redis pub/sub message relay} across server instances with keyspace-notification-driven eviction, reducing stale presence state to under \textbf{30 seconds} on ungraceful disconnects.}
         \vspace{2pt}
         \resumeItem{Delivered cursor position smoothing with continuous mid-animation target updates, exponential backoff reconnection, and \textbf{58 tests} covering throttling, time-to-live eviction, and message delivery.}
     \resumeItemListEnd
@@ -215,9 +220,9 @@
     {\textbf{\normalsize{\underline{DaemonDoc}}} $|$ \href{https://github.com/xevrion/DaemonDoc}{\underline{GitHub}} $|$ \href{https://daemondoc.online}{\underline{Live}} $|$ \footnotesize{\textbf{TypeScript, Express, MongoDB, Redis (BullMQ), Docker}}}{Jan 2026 -- May 2026}\\
     \vspace{8pt}
     \resumeItemListStart
-        \resumeItem{Automated README generation on git push via GitHub Webhooks, achieving an \textbf{85\% success rate} across \textbf{959 automation runs} processing 68 active repositories for \textbf{50 users}.}
+        \resumeItem{Shipped an \textbf{LLM-driven documentation agent} triggered by GitHub webhooks, sustaining an \textbf{85\% success rate} across \textbf{959 production runs} over 68 repositories for \textbf{50 users}.}
         \vspace{2pt}
-        \resumeItem{Architected a Redis (BullMQ) job pipeline with exponential backoff and fault tolerance, reducing token costs by \textbf{70\%} via source file filtering before prompt construction.}
+        \resumeItem{Architected a \textbf{Redis (BullMQ) queue-backed job pipeline} with exponential backoff, retries, and fault isolation, cutting \textbf{LLM token costs by 70\%} via source filtering during prompt construction.}
         \vspace{2pt}
         \resumeItem{Orchestrated \textbf{4 services} with Docker Compose, configuring an Nginx reverse proxy and GitHub Actions pipeline to enable zero-downtime deployments.}
     \resumeItemListEnd
@@ -227,7 +232,7 @@
           {\textbf{\normalsize{\underline{IIT Jodhpur PHC System}}} $|$ \href{https://github.com/xevrion/iitj-phc-system}{\underline{GitHub}} $|$ \footnotesize{\textbf{Node.js, Express, PostgreSQL, Prisma, Docker}}}{Jan 2026 -- Apr 2026}\\
           \vspace{8pt}
           \resumeItemListStart
-            \resumeItem {Spearheaded backend architecture to replace a paper-based workflow with a permission-based platform featuring \textbf{6 roles, 63 endpoints, and 20 database models} using JSON Web Token and LDAP authentication.}
+            \resumeItem {Spearheaded backend architecture replacing a paper workflow with a role-based platform of \textbf{63 REST endpoints} over a \textbf{20-model relational schema} (PostgreSQL/Prisma), with JWT and LDAP authentication across \textbf{6 roles}.}
             \vspace{2pt}
         \resumeItem{Verified reliability via \textbf{48 test cases} and load tests at \textbf{20 concurrent users}, securing production deployment approval projecting \textbf{5 staff-hours saved per day}.}
           \resumeItemListEnd 
@@ -241,17 +246,16 @@
             \begin{itemize}[itemsep=-2pt, parsep=2pt]
         
                 \item\small Data Structures and Algorithms
-                \item\small Object-Oriented Programming
                 \item\small Operating Systems
-
                 \item\small Database Management Systems
 
-                \item\small Software Engineering
                 \item\small Machine Learning
-                \item\small Discrete Mathematics
+                \item\small Software Engineering
+                \item\small Object-Oriented Programming
 
                 \item\small Pattern Recognition
                 \item\small Probability and Statistics
+                \item\small Discrete Mathematics
           
             \end{itemize}
         \end{multicols}
@@ -264,7 +268,7 @@
                 \vspace{2pt}
                 \resumeItem{Achieved Max Rating of \textbf{1429} on Codeforces; solved \textbf{450+} algorithmic problems on LeetCode in C++.}
                 \vspace{2pt}
-                \resumeItem{Merged \textbf{84+ open-source contributions} across GitHub and GitLab, shipping features and bug fixes to \href{https://invent.kde.org/multimedia/kdenlive}{\textbf{\underline{Kdenlive}}}, \href{https://github.com/vitest-dev/vitest}{\textbf{\underline{Vitest}}}, \href{https://github.com/wagtail/wagtail}{\textbf{\underline{Wagtail}}}, and \href{https://github.com/schollz/croc}{\textbf{\underline{croc}}}.}
+                \resumeItem{Merged \textbf{84+ open-source contributions} across GitHub and GitLab, authoring issue reports, design notes, and reviewed pull requests for \href{https://invent.kde.org/multimedia/kdenlive}{\textbf{\underline{Kdenlive}}}, \href{https://github.com/vitest-dev/vitest}{\textbf{\underline{Vitest}}}, \href{https://github.com/wagtail/wagtail}{\textbf{\underline{Wagtail}}}, and \href{https://github.com/schollz/croc}{\textbf{\underline{croc}}} (Go).}
           \end{itemize}
  \vspace{-8pt}
 
