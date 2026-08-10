@@ -208,11 +208,11 @@
     {\textbf{\normalsize{\underline{DaemonDoc}}} $|$ \href{https://github.com/xevrion/DaemonDoc}{\underline{GitHub}} $|$ \href{https://daemondoc.online}{\underline{Live}} $|$ \footnotesize{\textbf{TypeScript, LLM APIs, Express, MongoDB, Redis (BullMQ), Docker}}}{Jan 2026 -- May 2026}\\
     \vspace{8pt}
     \resumeItemListStart
-        \resumeItem{Built an \textbf{LLM agent pipeline} triggered by GitHub webhooks that ingests repositories, filters source context, and generates documentation, sustaining an \textbf{85\% success rate} across \textbf{959 production runs} over 68 repositories for \textbf{50 users}.}
+        \resumeItem{Built an \textbf{LLM agent pipeline} on a \textbf{Redis (BullMQ)} queue, triggered by GitHub webhooks with idempotency and loop guards, sustaining an \textbf{85\% success rate} across \textbf{959 production runs} over 68 repositories for \textbf{50 users}.}
         \vspace{2pt}
-        \resumeItem{Architected a \textbf{Redis (BullMQ) job queue} with exponential backoff, retries, and per-job fault isolation, cutting \textbf{LLM token costs 70\%} through context filtering during prompt construction.}
+        \resumeItem{Cut per-run token cost roughly \textbf{10x} with a two-stage router that sends file paths and token estimates, never file content, to a cheap model to select context before invoking the main model, with failover across 6 provider keys.}
         \vspace{2pt}
-        \resumeItem{Orchestrated \textbf{4 services} with Docker Compose behind an Nginx reverse proxy, with a GitHub Actions pipeline enabling zero-downtime deployments.}
+        \resumeItem{Designed content-addressed section hashing and an output validator that blocks hallucinated or malformed sections, retrying in strict mode and skipping the commit rather than corrupting a user's README.}
     \resumeItemListEnd
     \vspace{-6pt}
 
