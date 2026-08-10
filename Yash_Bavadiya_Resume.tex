@@ -222,9 +222,9 @@
     \resumeItemListStart
         \resumeItem{Shipped an \textbf{LLM-driven documentation agent} triggered by GitHub webhooks, sustaining an \textbf{85\% success rate} across \textbf{959 production runs} over 68 repositories for \textbf{50 users}.}
         \vspace{2pt}
-        \resumeItem{Architected a \textbf{Redis (BullMQ) queue-backed job pipeline} with exponential backoff, retries, and fault isolation, cutting \textbf{LLM token costs by 70\%} via source filtering during prompt construction.}
+        \resumeItem{Architected a \textbf{Redis (BullMQ) queue-backed job pipeline} with failover across 6 provider keys, cutting per-run token cost roughly \textbf{10x} via a two-stage router that sends file paths, never file content, to a cheap model to select context.}
         \vspace{2pt}
-        \resumeItem{Orchestrated \textbf{4 services} with Docker Compose, configuring an Nginx reverse proxy and GitHub Actions pipeline to enable zero-downtime deployments.}
+        \resumeItem{Designed content-addressed section hashing and an output validator blocking hallucinated sections, retrying in strict mode and skipping the commit rather than corrupting a user's README.}
     \resumeItemListEnd
     \vspace{-6pt}
 
