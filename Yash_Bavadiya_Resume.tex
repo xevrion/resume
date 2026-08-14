@@ -20,16 +20,21 @@
 \hypersetup{
   pdftitle={Yash Bavadiya - Resume},
   pdfauthor={Yash Bavadiya},
-  pdfauthortitle={Software Engineer},
-  pdfsubject={Software Engineer Resume - C++, TypeScript, Node.js, React},
+  pdfauthortitle={Software Engineering Intern},
+  pdfsubject={Software Engineering Intern Resume - C++, Data Structures, Algorithms, Distributed Systems},
   pdfkeywords={
-    C, C++, Python, JavaScript, TypeScript, MySQL,
-    React, Next.js, Express, Prisma, Qt, PostgreSQL, MongoDB, Redis,
-    WebSockets, WebRTC, Firebase, Docker, Linux, UNIX, REST APIs, TCP/IP,
-    Git, Nginx, GitHub Actions, Vercel, Postman,
-    Data Structures, Algorithms, System Design, Distributed Systems,
-    Software Engineer, SDE, Full Stack, Backend, Frontend,
-    Surat, Jodhpur, India, Open to Work,
+    C++, C, Python, TypeScript, JavaScript, SQL, MySQL, PostgreSQL,
+    Data Structures, Algorithms, Object-Oriented Programming, OOP,
+    Operating Systems, Database Management Systems, Computer Networks,
+    System Design, Distributed Systems, Scalability, Debugging,
+    Competitive Programming, LeetCode, Codeforces, Problem Solving,
+    Qt, Node.js, Express, React, Next.js, Prisma, MongoDB, Redis,
+    Message Queues, WebSockets, REST APIs, TCP/IP, Docker, Linux, UNIX,
+    Git, GitHub Actions, Nginx, Postman, Vercel,
+    Open Source, Google Summer of Code, GSoC, KDE, Production Systems,
+    Reliability, Observability, Software Engineering Intern, SDE, SWE,
+    Backend, Full Stack, Microsoft,
+    Jodhpur, Surat, India, Open to Work,
     xevrion
   },
   pdfcreator={pdflatex},
@@ -158,10 +163,10 @@
 \section{\large{TECHNICAL SKILLS}}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{\small{Languages:}}{  \small{C, C++, Python, JavaScript, TypeScript, MySQL}} \\ \vspace{1pt}
-     \textbf{\small{Technologies/Frameworks:}}{  \small{React, Next.js, Express, Prisma, Qt (C++), PostgreSQL, MongoDB, Redis, WebSockets, WebRTC, Firebase, Docker, Linux/UNIX environments, Relational Databases, REST APIs, TCP/IP}} \\ \vspace{1pt}
-     \textbf{\small{Tools:}}{  \small{Git, Nginx, GitHub Actions, Vercel, Postman, VS Code}} \\ \vspace{1pt}
-     \textbf{\small{Core Competencies:}}{  \small{Data Structures and Algorithms, Object-Oriented Programming, Operating Systems, System Design, Distributed Systems, REST APIs}} \\
+     \textbf{\small{Languages:}}{  \small{C++, C, Python, TypeScript, JavaScript, SQL}} \\ \vspace{1pt}
+     \textbf{\small{Core CS:}}{  \small{Data Structures and Algorithms, Object-Oriented Programming, Operating Systems, Database Management Systems, Computer Networks, System Design, Distributed Systems}} \\ \vspace{1pt}
+     \textbf{\small{Technologies/Frameworks:}}{  \small{Qt (C++), Node.js, Express, React, Next.js, Prisma, PostgreSQL, MySQL, MongoDB, Redis, WebSockets, Docker, Linux/UNIX, REST APIs, TCP/IP}} \\ \vspace{1pt}
+     \textbf{\small{Tools:}}{  \small{Git, GitHub Actions, Nginx, Postman, Vercel, VS Code}} \\
     }}
  \end{itemize}
 
@@ -175,9 +180,9 @@
       {{\normalsize{\textbf{\underline{Kdenlive @KDE Community}}}} $|$ Open Source Contributor, C++ and Qt}{Remote}
       \vspace{-5pt}
       \resumeItemListStart
-        \resumeItem{Secured selection for \textbf{GSoC 2026} among 1,200 global contributors to implement Kdenlive's \textbf{RGB curve editor, gradient editor, and speed ramp widgets} in C++ and Qt.}
+        \resumeItem{Selected for \textbf{GSoC 2026} among 1,200 global contributors to design and implement Kdenlive's \textbf{RGB curve, gradient, and speed ramp editors} in \textbf{C++ and Qt} within a 500k+ line production codebase.}
         \vspace{2pt}
-        \resumeItem{Integrated \textbf{20 contributions} across Kdenlive and upstream repositories, resolving an \textbf{11-year-old bug} via a gap-detection algorithm shipping to \textbf{41,000 monthly Flathub installs}.}
+        \resumeItem{Shipped \textbf{20 contributions} across Kdenlive and upstream repositories, resolving an \textbf{11-year-old bug} with a gap-detection algorithm now running for \textbf{41,000 monthly installs}, reviewed and merged by core maintainers.}
       \resumeItemListEnd
 
       \resumeSubheading
@@ -215,11 +220,11 @@
     {\textbf{\normalsize{\underline{DaemonDoc}}} $|$ \href{https://github.com/xevrion/DaemonDoc}{\underline{GitHub}} $|$ \href{https://daemondoc.online}{\underline{Live}} $|$ \footnotesize{\textbf{TypeScript, Express, MongoDB, Redis (BullMQ), Docker}}}{Jan 2026 -- May 2026}\\
     \vspace{8pt}
     \resumeItemListStart
-        \resumeItem{Automated README generation on git push via GitHub Webhooks, achieving an \textbf{85\% success rate} across \textbf{959 automation runs} processing 68 active repositories for \textbf{50 users}.}
+        \resumeItem{Automated documentation generation on git push via GitHub Webhooks on a \textbf{Redis (BullMQ)} job queue, sustaining an \textbf{85\% success rate} across \textbf{959 production runs} over 68 repositories for \textbf{50 users}.}
         \vspace{2pt}
-        \resumeItem{Architected a Redis (BullMQ) job pipeline with exponential backoff and fault tolerance, reducing token costs by \textbf{70\%} via source file filtering before prompt construction.}
+        \resumeItem{Cut per-run API cost roughly \textbf{10x} with a two-stage router sending file paths and token estimates, never file content, to a lightweight model to select context, with failover across 6 provider keys.}
         \vspace{2pt}
-        \resumeItem{Orchestrated \textbf{4 services} with Docker Compose, configuring an Nginx reverse proxy and GitHub Actions pipeline to enable zero-downtime deployments.}
+        \resumeItem{Engineered content-addressed section hashing over a parsed document tree, with idempotency and loop guards on the webhook path and validation that skips a commit rather than corrupt a user's file.}
     \resumeItemListEnd
     \vspace{-6pt}
 
@@ -260,9 +265,9 @@
 %-----------ACHIEVEMENTS-----------
  \section{\large{ACHIEVEMENTS}}
           \begin{itemize}[leftmargin=0.15in]
-                \resumeItem{JEE Advanced 2024: AIR \textbf{3449}; JEE Main 2024: \textbf{99.65} percentile, AIR \textbf{5680}.}
+                \resumeItem{Solved \textbf{450+} algorithmic problems on \href{https://leetcode.com/u/xevrion/}{\textbf{\underline{LeetCode}}} in C++; Max Rating \textbf{1429} on Codeforces across rated contests.}
                 \vspace{2pt}
-                \resumeItem{Achieved Max Rating of \textbf{1429} on Codeforces; solved \textbf{450+} algorithmic problems on LeetCode in C++.}
+                \resumeItem{JEE Advanced 2024: AIR \textbf{3449} of 180,000+ candidates; JEE Main 2024: \textbf{99.65} percentile, AIR \textbf{5680}.}
                 \vspace{2pt}
                 \resumeItem{Merged \textbf{84+ open-source contributions} across GitHub and GitLab, shipping features and bug fixes to \href{https://invent.kde.org/multimedia/kdenlive}{\textbf{\underline{Kdenlive}}}, \href{https://github.com/vitest-dev/vitest}{\textbf{\underline{Vitest}}}, \href{https://github.com/wagtail/wagtail}{\textbf{\underline{Wagtail}}}, and \href{https://github.com/schollz/croc}{\textbf{\underline{croc}}}.}
           \end{itemize}
