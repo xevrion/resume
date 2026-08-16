@@ -167,7 +167,7 @@
     \small{\item{
      \textbf{\small{Languages:}}{  \small{C++, C, Python, JavaScript, TypeScript, SQL}} \\ \vspace{1pt}
      \textbf{\small{Core CS:}}{  \small{Data Structures and Algorithms, Object-Oriented Programming, Software Design, Operating Systems, Database Management Systems, Computer Networks, Distributed Systems}} \\ \vspace{1pt}
-     \textbf{\small{AI Engineering:}}{  \small{Prompt Engineering, Retrieval-Augmented Generation, Agentic Pipelines, LLM Evaluation, Context Management, FAISS Vector Search, Hugging Face Transformers, PyTorch}} \\ \vspace{1pt}
+     \textbf{\small{AI Engineering:}}{  \small{Prompt Engineering, Retrieval-Augmented Generation, Agentic Pipelines, LLM Evaluation, Context Management, FAISS, Hugging Face, PyTorch}} \\ \vspace{1pt}
      \textbf{\small{Technologies/Frameworks:}}{  \small{Node.js, Express, React, Next.js, Qt (C++), Prisma, PostgreSQL, MySQL, MongoDB, Redis, WebSockets, Docker, Linux/UNIX, REST APIs, TCP/IP}} \\ \vspace{1pt}
      \textbf{\small{Practices \& Tools:}}{  \small{Git, CI/CD (GitHub Actions), Automated Testing, Agile/Scrum, Code Review, AI Coding Assistants (Claude Code, GitHub Copilot), Nginx, Postman}} \\
     }}
@@ -208,14 +208,14 @@
     \vspace{-4pt}
 
      \resumeProjectHeading
-    {\textbf{\normalsize{\underline{DaemonDoc}}} $|$ \href{https://github.com/xevrion/DaemonDoc}{\underline{GitHub}} $|$ \href{https://daemondoc.online}{\underline{Live}} $|$ \footnotesize{\textbf{TypeScript, LLM APIs, Express, MongoDB, Redis (BullMQ), Docker}}}{Jan 2026 -- May 2026}\\
+    {\textbf{\normalsize{\underline{DaemonDoc}}} \footnotesize{(team of 3)} $|$ \href{https://github.com/xevrion/DaemonDoc}{\underline{GitHub}} $|$ \href{https://daemondoc.online}{\underline{Live}} $|$ \footnotesize{\textbf{TypeScript, LLM APIs, Express, MongoDB, Redis}}}{Jan 2026 -- May 2026}\\
     \vspace{8pt}
     \resumeItemListStart
-        \resumeItem{Built an \textbf{agentic LLM pipeline} on a \textbf{Redis (BullMQ)} job queue, triggered by GitHub webhooks with idempotency and loop guards, sustaining an \textbf{85\% success rate} across \textbf{959 production runs} over 68 repositories for \textbf{50 users}.}
+        \resumeItem{Built an \textbf{agentic LLM pipeline} on a \textbf{Redis (BullMQ)} job queue with webhook idempotency and loop guards, sustaining an \textbf{85\% success rate} across \textbf{959 production runs} over 68 repositories for \textbf{50 users}.}
         \vspace{2pt}
         \resumeItem{Cut per-run API cost roughly \textbf{10x} through \textbf{context management}, routing file paths and token estimates, never file content, to a lightweight model to select context, with failover across 6 provider keys.}
         \vspace{2pt}
-        \resumeItem{Engineered content-addressed section hashing and output validation that skips a commit rather than corrupt a user's file, prioritising reliability over throughput in a system with write access to \textbf{68 repositories}.}
+        \resumeItem{Owned the \textbf{GitHub integration and prompt-construction layers}, plus a Razorpay billing system secured with \textbf{HMAC-SHA256} webhook signature verification.}
     \resumeItemListEnd
     \vspace{-6pt}
 
@@ -223,7 +223,7 @@
     {\textbf{\normalsize{\underline{Flock}}} $|$ \href{https://github.com/xevrion/flock}{\underline{GitHub}} $|$ \href{https://www.npmjs.com/package/@xevrion/flock-react}{\underline{npm}} $|$ \footnotesize{\textbf{TypeScript, WebSocket, Redis, React, Docker}}}{Feb 2026 -- Jun 2026}\\
     \vspace{8pt}
     \resumeItemListStart
-        \resumeItem{Released 3 npm packages enabling multiplayer cursors and live presence in web applications via a \textbf{10-line integration}, installable as a \textbf{55MB} self-hosted Docker image or npx.}
+        \resumeItem{Released 3 npm packages enabling multiplayer cursors and live presence via a \textbf{10-line integration}, installable as a \textbf{55MB} self-hosted Docker image or npx.}
         \vspace{2pt}
         \resumeItem{Implemented a horizontally scalable \textbf{Redis pub/sub relay} across server instances with keyspace-notification-driven eviction, reducing stale presence state to under \textbf{30 seconds} on ungraceful disconnects.}
         \vspace{2pt}
@@ -235,7 +235,7 @@
           {\textbf{\normalsize{\underline{IIT Jodhpur PHC System}}} $|$ \href{https://github.com/xevrion/iitj-phc-system}{\underline{GitHub}} $|$ \footnotesize{\textbf{Node.js, Express, PostgreSQL, Prisma, Docker}}}{Jan 2026 -- Apr 2026}\\
           \vspace{8pt}
           \resumeItemListStart
-            \resumeItem {Gathered requirements from campus health-centre staff and translated a paper-based workflow into a role-based platform of \textbf{63 REST endpoints} over a \textbf{20-model relational schema}, with JWT and LDAP authentication across \textbf{6 roles}.}
+            \resumeItem {Gathered requirements from health-centre staff and translated a paper workflow into \textbf{63 REST endpoints} over a \textbf{20-model relational schema}, secured with \textbf{JWT} sessions and \textbf{LDAP} auth across \textbf{6 permission tiers}.}
             \vspace{2pt}
         \resumeItem{Verified reliability via \textbf{48 automated test cases} and load testing at \textbf{20 concurrent users}, securing production deployment approval projecting \textbf{5 staff-hours saved per day}.}
           \resumeItemListEnd 
@@ -278,11 +278,9 @@
 %-----------LEADERSHIP-----------
  \section{\large{LEADERSHIP}}
           \begin{itemize}[leftmargin=0.15in]
-                \resumeItem{\textbf{Junior Core Team Member} at DevlUp Labs, IIT Jodhpur; mentored 30 students and facilitated 2 open-source workshops.}
+                \resumeItem{\textbf{Junior Core Team Member}, DevlUp Labs, IIT Jodhpur; mentored 30 students and ran 2 open-source workshops.}
                 \vspace{2pt}
-                \resumeItem{\textbf{Core Member} at E-Cell, IIT Jodhpur; supported 3 entrepreneurship events and initiatives over 9 months.}
-                \vspace{2pt}
-                \resumeItem{\textbf{Core Member} at Programming Club, IIT Jodhpur; co-organized 5 contests and 10 sessions on competitive programming.}
+                \resumeItem{\textbf{Core Member}, Programming Club and E-Cell, IIT Jodhpur; co-organized 5 competitive programming contests, 10 sessions, and 3 entrepreneurship events.}
           \end{itemize}
  
  \end{document}
