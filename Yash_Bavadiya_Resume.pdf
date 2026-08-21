@@ -3,7 +3,7 @@
 53 0 obj
 <<
 /Type /Metadata /Subtype /XML 
-/Length 23924     
+/Length 23884     
 >>
 stream
 <?xpacket begin="ï»¿" id="W5M0MpCehiHzreSzNTczkc9d"?>
@@ -251,7 +251,7 @@ stream
         </rdf:Bag>
       </pdfaExtension:schemas>
       <pdf:Producer>Yash Bavadiya</pdf:Producer>
-      <pdf:Keywords> C, C++, Python, JavaScript, TypeScript, SQL, MySQL, PostgreSQL, Object-Oriented Programming, OOP, Data Structures, Algorithms, Software Design, Software Development Lifecycle, SDLC, Agile, Scrum, CI/CD, Automated Testing, Observability, Secure Development, Distributed Systems, Cloud-Native, Scalability, Reliability, Usability, Prompt Engineering, Retrieval Augmented Generation, RAG, Agentic AI, Large Language Models, LLM, Context Management, FAISS, Vector Search, GitHub Copilot, Claude Code, AI Coding Assistants, Generative AI, AI/ML, Machine Learning, PyTorch, Hugging Face Transformers, React, Next.js, Node.js, Express, Prisma, Qt, MongoDB, Redis, WebSockets, Docker, Nginx, Linux, UNIX, REST APIs, TCP/IP, Git, GitHub Actions, Postman, Vercel, User Interface Design, Web Applications, Software Engineering Intern, SDE, SWE, Backend, Full Stack, Payments, Fintech, Bengaluru, Bangalore, Jodhpur, Surat, India, Open to Work, xevrion </pdf:Keywords>
+      <pdf:Keywords> C, C++, Python, JavaScript, TypeScript, SQL, MySQL, PostgreSQL, Object-Oriented Programming, OOP, Data Structures, Algorithms, Software Design, Software Development Lifecycle, SDLC, Agile, Scrum, CI/CD, Automated Testing, Observability, Secure Development, Distributed Systems, Cloud-Native, Scalability, Reliability, Usability, Prompt Engineering, Retrieval Augmented Generation, RAG, Agentic AI, Large Language Models, LLM, Context Management, FAISS, Vector Search, GitHub Copilot, Claude Code, AI Coding Assistants, Generative AI, AI/ML, Machine Learning, PyTorch, Hugging Face Transformers, React, Next.js, Node.js, Express, Prisma, Qt, MongoDB, Redis, WebSockets, Docker, Nginx, Linux, UNIX, REST APIs, TCP/IP, Git, GitHub Actions, Postman, Vercel, User Interface Design, Web Applications, Software Engineering Intern, SDE, SWE, Backend, Frontend, Full Stack, Cloud, Payments, Jodhpur, Surat, India, Open to Work, xevrion </pdf:Keywords>
       <pdf:PDFVersion>1.5</pdf:PDFVersion>
       <xmpRights:Marked>True</xmpRights:Marked>
       <dc:format>application/pdf</dc:format>
@@ -262,7 +262,7 @@ stream
       </dc:title>
       <dc:description>
         <rdf:Alt>
-          <rdf:li xml:lang="en-US">Software Engineering Intern Resume - C++, Python, Distributed Systems, RAG, Agentic AI</rdf:li>
+          <rdf:li xml:lang="en-US">Software Engineering Intern Resume - C++, Python, TypeScript, Full Stack, GenAI, Distributed Systems</rdf:li>
         </rdf:Alt>
       </dc:description>
       <dc:rights>
@@ -272,7 +272,7 @@ stream
       </dc:rights>
       <dc:date>
         <rdf:Seq>
-          <rdf:li>2026-08-21T10:16:37+05:30</rdf:li>
+          <rdf:li>2026-08-21T10:21:50+05:30</rdf:li>
         </rdf:Seq>
       </dc:date>
       <dc:type>
@@ -355,11 +355,10 @@ stream
           <rdf:li>SDE</rdf:li>
           <rdf:li>SWE</rdf:li>
           <rdf:li>Backend</rdf:li>
+          <rdf:li>Frontend</rdf:li>
           <rdf:li>Full Stack</rdf:li>
+          <rdf:li>Cloud</rdf:li>
           <rdf:li>Payments</rdf:li>
-          <rdf:li>Fintech</rdf:li>
-          <rdf:li>Bengaluru</rdf:li>
-          <rdf:li>Bangalore</rdf:li>
           <rdf:li>Jodhpur</rdf:li>
           <rdf:li>Surat</rdf:li>
           <rdf:li>India</rdf:li>
@@ -374,12 +373,12 @@ stream
         </rdf:Bag>
       </dc:language>
       <photoshop:AuthorsPosition>Software Engineering Intern</photoshop:AuthorsPosition>
-      <xmp:CreateDate>2026-08-21T10:16:37+05:30</xmp:CreateDate>
-      <xmp:ModifyDate>2026-08-21T10:16:37+05:30</xmp:ModifyDate>
-      <xmp:MetadataDate>2026-08-21T10:16:37+05:30</xmp:MetadataDate>
+      <xmp:CreateDate>2026-08-21T10:21:50+05:30</xmp:CreateDate>
+      <xmp:ModifyDate>2026-08-21T10:21:50+05:30</xmp:ModifyDate>
+      <xmp:MetadataDate>2026-08-21T10:21:50+05:30</xmp:MetadataDate>
       <xmp:CreatorTool>pdflatex</xmp:CreatorTool>
       <xmpMM:DocumentID>uuid:d18826ce-fdc9-45f2-bbbb-626c4139b133</xmpMM:DocumentID>
-      <xmpMM:InstanceID>uuid:267f75fd-7590-45f7-99b6-c4c4c90ae4c4</xmpMM:InstanceID>
+      <xmpMM:InstanceID>uuid:620a3333-eaea-4339-8aea-333390a8d7a3</xmpMM:InstanceID>
       <xmpMM:VersionID>1</xmpMM:VersionID>
       <xmpMM:RenditionClass>default</xmpMM:RenditionClass>
       <Iptc4xmpCore:CreatorContactInfo rdf:parseType="Resource">
@@ -1186,9 +1185,9 @@ endstream
 endobj
 115 0 obj
 <<
-/Title(\376\377\000Y\000a\000s\000h\000\040\000B\000a\000v\000a\000d\000i\000y\000a\000\040\000-\000\040\000R\000e\000s\000u\000m\000e)/Subject(\376\377\000S\000o\000f\000t\000w\000a\000r\000e\000\040\000E\000n\000g\000i\000n\000e\000e\000r\000i\000n\000g\000\040\000I\000n\000t\000e\000r\000n\000\040\000R\000e\000s\000u\000m\000e\000\040\000-\000\040\000C\000+\000+\000,\000\040\000P\000y\000t\000h\000o\000n\000,\000\040\000D\000i\000s\000t\000r\000i\000b\000u\000t\000e\000d\000\040\000S\000y\000s\000t\000e\000m\000s\000,\000\040\000R\000A\000G\000,\000\040\000A\000g\000e\000n\000t\000i\000c\000\040\000A\000I)/Creator(\376\377\000p\000d\000f\000l\000a\000t\000e\000x)/Producer(\376\377\000Y\000a\000s\000h\000\040\000B\000a\000v\000a\000d\000i\000y\000a)
-/CreationDate (D:20260821101637+05'30')
-/ModDate (D:20260821101637+05'30')
+/Title(\376\377\000Y\000a\000s\000h\000\040\000B\000a\000v\000a\000d\000i\000y\000a\000\040\000-\000\040\000R\000e\000s\000u\000m\000e)/Subject(\376\377\000S\000o\000f\000t\000w\000a\000r\000e\000\040\000E\000n\000g\000i\000n\000e\000e\000r\000i\000n\000g\000\040\000I\000n\000t\000e\000r\000n\000\040\000R\000e\000s\000u\000m\000e\000\040\000-\000\040\000C\000+\000+\000,\000\040\000P\000y\000t\000h\000o\000n\000,\000\040\000T\000y\000p\000e\000S\000c\000r\000i\000p\000t\000,\000\040\000F\000u\000l\000l\000\040\000S\000t\000a\000c\000k\000,\000\040\000G\000e\000n\000A\000I\000,\000\040\000D\000i\000s\000t\000r\000i\000b\000u\000t\000e\000d\000\040\000S\000y\000s\000t\000e\000m\000s)/Creator(\376\377\000p\000d\000f\000l\000a\000t\000e\000x)/Producer(\376\377\000Y\000a\000s\000h\000\040\000B\000a\000v\000a\000d\000i\000y\000a)
+/CreationDate (D:20260821102150+05'30')
+/ModDate (D:20260821102150+05'30')
 /Trapped /False
 /PTEX.Fullbanner (This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) kpathsea version 6.3.5)
 >>
@@ -1224,15 +1223,17 @@ endobj
 /W [1 3 1]
 /Root 114 0 R
 /Info 115 0 R
-/ID [<A3FAE2085C92D6EBF211C3C0A30EAD54> <A3FAE2085C92D6EBF211C3C0A30EAD54>]
-/Length 292       
+/ID [<C44B6061D2665AC87E6CF1A5EB2530BF> <C44B6061D2665AC87E6CF1A5EB2530BF>]
+/Length 290       
 /Filter /FlateDecode
 >>
 stream
-xÚ%ÑÉ.ÃQ€ñsşZ35ÔPCÕ¬¦RS«æy¦h©T‰DÒ…aa+,¼I±µğ Â;x îwm~ù÷äääŠˆü:"î^èƒ~uîÃBµAh‡}ÈtÀ¸!:aò º PAØ"(†nØ†(”A9T@%x¡
-ª¡jÁuPĞ~h‚ 4«ˆÇŞÛ£rüi«ZaVa–`6`V`aB0 ƒ†!†…1ˆ¨Ü„ìŞ¨ÊÛ‡­q•ïˆ­˜ª÷¿&TÏâ¶&U^lM©f3¶¦ÕqùlÍ¨ğÛšU'–°5§NòÉ|mêİş1œç'†‹[ÃeÖù2\½®íØ$á !GêÜ¥Í»ç¨ü®(•
+xÚ%ÑÉ.P€ásnQs‹š‡š)j¬y¦æ¡(¥ÑH$$vÂBl-<ƒ-ñ^Â+ØØrÿkóå_Ü“““+"òkD2» İ jnãB5Ã(h]ğ@´B2!Ú`¼í°9!Ø‚<È‡ˆA‚üPÅP(…2(‡
+¨„*¨†¨…:B=4¨ˆÏİÛ©rôîªš`	V 
+‹0ë°
+Ë°°=Ğ}ĞA‚aQ¹öº½£*o/®ÆT¾ü®ÆUÿ5¡zr5©zÿàjJõ5êjZçÛÕŒšà«Y5ãaWsjiûµÉgËá§%­–ÓaËYÌr~g¹ø°\>Z®İØ&$` 	)57ûî)%Å'e
 endstream
 endobj
 startxref
-166969
+167002
 %%EOF
