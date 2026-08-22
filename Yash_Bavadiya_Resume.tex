@@ -28,6 +28,8 @@
     Software Design, Software Development Lifecycle, SDLC, Agile, Scrum,
     CI/CD, Automated Testing, Observability, Secure Development,
     Distributed Systems, Cloud-Native, Scalability, Reliability, Usability,
+    Low Latency, Lock-Free Programming, UDP Multicast, Order Books, Matching Engine,
+    Market Data, ITCH, HFT, High Frequency Trading, Emulation, Performance Tuning,
     Prompt Engineering, Retrieval Augmented Generation, RAG, Agentic AI,
     Large Language Models, LLM, Context Management, FAISS, Vector Search,
     GitHub Copilot, Claude Code, AI Coding Assistants, Generative AI,
@@ -168,7 +170,7 @@
      \textbf{\small{Languages:}}{  \small{C++, C, Python, JavaScript, TypeScript, SQL}} \\ \vspace{1pt}
      \textbf{\small{Core CS:}}{  \small{Data Structures and Algorithms, Object-Oriented Programming, Software Design, Operating Systems, Database Management Systems, Computer Networks, Distributed Systems}} \\ \vspace{1pt}
      \textbf{\small{AI Engineering:}}{  \small{Prompt Engineering, Retrieval-Augmented Generation, Agentic Pipelines, LLM Evaluation, Context Management, FAISS, Hugging Face, PyTorch}} \\ \vspace{1pt}
-     \textbf{\small{Technologies/Frameworks:}}{  \small{Node.js, Express, React, Next.js, Qt (C++), Prisma, PostgreSQL, MySQL, MongoDB, Redis, WebSockets, Docker, Linux/UNIX, REST APIs, TCP/IP}} \\ \vspace{1pt}
+     \textbf{\small{Technologies/Frameworks:}}{  \small{Qt (C++), CMake, SDL2, GoogleTest, Node.js, Express, React, PostgreSQL, MySQL, MongoDB, Redis, WebSockets, Docker, Linux/UNIX, REST APIs, TCP/IP, UDP Multicast}} \\ \vspace{1pt}
      \textbf{\small{Practices \& Tools:}}{  \small{Git, CI/CD (GitHub Actions), Automated Testing, Agile/Scrum, Code Review, AI Coding Assistants (Claude Code, GitHub Copilot), Nginx, Postman}} \\
     }}
  \end{itemize}
@@ -208,38 +210,37 @@
     \vspace{-4pt}
 
      \resumeProjectHeading
+    {\textbf{\normalsize{\underline{Photon}}} $|$ \href{https://github.com/xevrion/photon}{\underline{GitHub}} $|$ \footnotesize{\textbf{C++20, Linux, UDP Multicast, Lock-Free Concurrency}}}{Jun 2026 -- Jul 2026}\\
+    \vspace{8pt}
+    \resumeItemListStart
+        \resumeItem{Built a \textbf{NASDAQ ITCH 5.0 feed handler and matching engine}: zero-copy parsing of packed wire structs, busy-polled \textbf{recvmmsg} UDP multicast, and a \textbf{lock-free SPSC ring} with cache-line-separated indices, reaching \textbf{38ns median parse} and \textbf{452ns} median socket-to-consumed latency, measured via \textbf{rdtscp} on a full day of real market data.}
+        \vspace{2pt}
+        \resumeItem{Sustained \textbf{89k messages/sec} across \textbf{826 concurrent price-time priority order books} using array-indexed price levels, intrusive FIFO queues, and a fixed memory pool with \textbf{zero hot-path heap allocation}.}
+        \vspace{2pt}
+        \resumeItem{Verified with \textbf{27 GoogleTest cases} including a two-thread ring stress test, \textbf{ASan/UBSan} sanitizer presets, and clang-tidy CI on every push.}
+    \resumeItemListEnd
+    \vspace{-6pt}
+
+     \resumeProjectHeading
+    {\textbf{\normalsize{\underline{gbemu}}} $|$ \href{https://github.com/xevrion/gbemulator}{\underline{GitHub}} $|$ \footnotesize{\textbf{C++20, SDL2, Emulation}}}{Jul 2026}\\
+    \vspace{8pt}
+    \resumeItemListStart
+        \resumeItem{Hand-wrote a \textbf{Game Boy (DMG) emulator} from hardware documentation: full \textbf{LR35902 instruction set} with cycle timing and the HALT bug, PPU with sprite priorities, \textbf{four sound channels}, and MBC0/1/3 cartridge mappers with battery saves.}
+        \vspace{2pt}
+        \resumeItem{Passes all \textbf{11 Blargg cpu\_instrs} CPU test ROMs and the \textbf{dmg-acid2} PPU accuracy test; runs commercial games including Pokemon Red.}
+    \resumeItemListEnd
+    \vspace{-6pt}
+
+     \resumeProjectHeading
     {\textbf{\normalsize{\underline{DaemonDoc}}} \footnotesize{(team of 2)} $|$ \href{https://github.com/xevrion/DaemonDoc}{\underline{GitHub}} $|$ \href{https://daemondoc.online}{\underline{Live}} $|$ \footnotesize{\textbf{TypeScript, LLM APIs, Express, MongoDB, Redis}}}{Jan 2026 -- May 2026}\\
     \vspace{8pt}
     \resumeItemListStart
         \resumeItem{Built an \textbf{agentic LLM pipeline} on a \textbf{Redis (BullMQ)} job queue with webhook idempotency and loop guards, sustaining an \textbf{85\% success rate} across \textbf{959 production runs} over 68 repositories for \textbf{50 users}.}
         \vspace{2pt}
-        \resumeItem{Cut per-run API cost roughly \textbf{10x} through \textbf{context management}, routing file paths and token estimates, never file content, to a lightweight model to select context, with failover across 6 provider keys.}
-        \vspace{2pt}
         \resumeItem{Owned the \textbf{GitHub integration and prompt-construction layers}, plus a Razorpay billing system secured with \textbf{HMAC-SHA256} webhook signature verification.}
     \resumeItemListEnd
     \vspace{-6pt}
 
-    \resumeProjectHeading
-    {\textbf{\normalsize{\underline{Flock}}} $|$ \href{https://github.com/xevrion/flock}{\underline{GitHub}} $|$ \href{https://www.npmjs.com/package/@xevrion/flock-react}{\underline{npm}} $|$ \footnotesize{\textbf{TypeScript, WebSocket, Redis, React, Docker}}}{Feb 2026 -- Jun 2026}\\
-    \vspace{8pt}
-    \resumeItemListStart
-        \resumeItem{Released 3 npm packages enabling multiplayer cursors and live presence via a \textbf{10-line integration}, installable as a \textbf{55MB} self-hosted Docker image or npx.}
-        \vspace{2pt}
-        \resumeItem{Implemented a horizontally scalable \textbf{Redis pub/sub relay} across server instances with keyspace-notification-driven eviction, reducing stale presence state to under \textbf{30 seconds} on ungraceful disconnects.}
-        \vspace{2pt}
-        \resumeItem{Delivered cursor smoothing with mid-animation target updates, exponential backoff reconnection, and \textbf{58 automated tests} covering throttling, time-to-live eviction, and message delivery.}
-    \resumeItemListEnd
-    \vspace{-6pt}
-
-    \resumeProjectHeading
-          {\textbf{\normalsize{\underline{IIT Jodhpur PHC System}}} $|$ \href{https://github.com/xevrion/iitj-phc-system}{\underline{GitHub}} $|$ \footnotesize{\textbf{Node.js, Express, PostgreSQL, Prisma, Docker}}}{Jan 2026 -- Apr 2026}\\
-          \vspace{8pt}
-          \resumeItemListStart
-            \resumeItem {Gathered requirements from health-centre staff and translated a paper workflow into \textbf{63 REST endpoints} over a \textbf{20-model relational schema}, secured with \textbf{JWT} sessions and \textbf{LDAP} auth across \textbf{6 permission tiers}.}
-            \vspace{2pt}
-        \resumeItem{Verified reliability via \textbf{48 automated test cases} and load testing at \textbf{20 concurrent users}, securing production deployment approval projecting \textbf{5 staff-hours saved per day}.}
-          \resumeItemListEnd 
-          
     \resumeSubHeadingListEnd
 \vspace{-6pt}
 
