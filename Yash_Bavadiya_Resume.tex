@@ -232,13 +232,13 @@
     \vspace{-6pt}
 
     \resumeProjectHeading
-          {\textbf{\normalsize{\underline{IIT Jodhpur PHC System}}} $|$ \href{https://github.com/xevrion/iitj-phc-system}{\underline{GitHub}} $|$ \footnotesize{\textbf{Node.js, Express, PostgreSQL, Prisma, Docker}}}{Jan 2026 -- Apr 2026}\\
+          {\textbf{\normalsize{\underline{Photon}}} $|$ \href{https://github.com/xevrion/photon}{\underline{GitHub}} $|$ \footnotesize{\textbf{C++20, Linux, UDP Multicast, Lock-Free Concurrency}}}{Jun 2026 -- Jul 2026}\\
           \vspace{8pt}
           \resumeItemListStart
-            \resumeItem {Gathered requirements from health-centre staff and translated a paper workflow into \textbf{63 REST endpoints} over a \textbf{20-model relational schema}, secured with \textbf{JWT} sessions and \textbf{LDAP} auth across \textbf{6 permission tiers}.}
+            \resumeItem {Built a \textbf{NASDAQ ITCH 5.0 feed handler and matching engine}: zero-copy parsing, busy-polled UDP multicast, and a \textbf{lock-free SPSC ring}, reaching \textbf{38ns median parse} and \textbf{452ns} socket-to-consumed latency via \textbf{rdtscp} on a full day of real market data.}
             \vspace{2pt}
-        \resumeItem{Verified reliability via \textbf{48 automated test cases} and load testing at \textbf{20 concurrent users}, securing production deployment approval projecting \textbf{5 staff-hours saved per day}.}
-          \resumeItemListEnd 
+        \resumeItem{Sustained \textbf{89k messages/sec} across \textbf{826 concurrent price-time priority order books} with zero hot-path heap allocation; verified by \textbf{27 GoogleTest cases}, \textbf{ASan/UBSan} presets, and clang-tidy CI.}
+          \resumeItemListEnd
           
     \resumeSubHeadingListEnd
 \vspace{-6pt}
