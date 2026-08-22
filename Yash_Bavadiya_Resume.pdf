@@ -3,7 +3,7 @@
 53 0 obj
 <<
 /Type /Metadata /Subtype /XML 
-/Length 23884     
+/Length 23873     
 >>
 stream
 <?xpacket begin="ï»¿" id="W5M0MpCehiHzreSzNTczkc9d"?>
@@ -262,7 +262,7 @@ stream
       </dc:title>
       <dc:description>
         <rdf:Alt>
-          <rdf:li xml:lang="en-US">Software Engineering Intern Resume - C++, Python, TypeScript, Full Stack, GenAI, Distributed Systems</rdf:li>
+          <rdf:li xml:lang="en-US">Software Developer Intern Resume - C++, Systems, Data Structures, Algorithms, Performance</rdf:li>
         </rdf:Alt>
       </dc:description>
       <dc:rights>
@@ -272,7 +272,7 @@ stream
       </dc:rights>
       <dc:date>
         <rdf:Seq>
-          <rdf:li>2026-08-21T10:21:50+05:30</rdf:li>
+          <rdf:li>2026-08-22T15:59:49+05:30</rdf:li>
         </rdf:Seq>
       </dc:date>
       <dc:type>
@@ -373,12 +373,12 @@ stream
         </rdf:Bag>
       </dc:language>
       <photoshop:AuthorsPosition>Software Engineering Intern</photoshop:AuthorsPosition>
-      <xmp:CreateDate>2026-08-21T10:21:50+05:30</xmp:CreateDate>
-      <xmp:ModifyDate>2026-08-21T10:21:50+05:30</xmp:ModifyDate>
-      <xmp:MetadataDate>2026-08-21T10:21:50+05:30</xmp:MetadataDate>
+      <xmp:CreateDate>2026-08-22T15:59:49+05:30</xmp:CreateDate>
+      <xmp:ModifyDate>2026-08-22T15:59:49+05:30</xmp:ModifyDate>
+      <xmp:MetadataDate>2026-08-22T15:59:49+05:30</xmp:MetadataDate>
       <xmp:CreatorTool>pdflatex</xmp:CreatorTool>
       <xmpMM:DocumentID>uuid:d18826ce-fdc9-45f2-bbbb-626c4139b133</xmpMM:DocumentID>
-      <xmpMM:InstanceID>uuid:620a3333-eaea-4339-8aea-333390a8d7a3</xmpMM:InstanceID>
+      <xmpMM:InstanceID>uuid:75fd7546-c4c4-413e-b7fd-c41d133e4620</xmpMM:InstanceID>
       <xmpMM:VersionID>1</xmpMM:VersionID>
       <xmpMM:RenditionClass>default</xmpMM:RenditionClass>
       <Iptc4xmpCore:CreatorContactInfo rdf:parseType="Resource">
@@ -1185,9 +1185,9 @@ endstream
 endobj
 115 0 obj
 <<
-/Title(\376\377\000Y\000a\000s\000h\000\040\000B\000a\000v\000a\000d\000i\000y\000a\000\040\000-\000\040\000R\000e\000s\000u\000m\000e)/Subject(\376\377\000S\000o\000f\000t\000w\000a\000r\000e\000\040\000E\000n\000g\000i\000n\000e\000e\000r\000i\000n\000g\000\040\000I\000n\000t\000e\000r\000n\000\040\000R\000e\000s\000u\000m\000e\000\040\000-\000\040\000C\000+\000+\000,\000\040\000P\000y\000t\000h\000o\000n\000,\000\040\000T\000y\000p\000e\000S\000c\000r\000i\000p\000t\000,\000\040\000F\000u\000l\000l\000\040\000S\000t\000a\000c\000k\000,\000\040\000G\000e\000n\000A\000I\000,\000\040\000D\000i\000s\000t\000r\000i\000b\000u\000t\000e\000d\000\040\000S\000y\000s\000t\000e\000m\000s)/Creator(\376\377\000p\000d\000f\000l\000a\000t\000e\000x)/Producer(\376\377\000Y\000a\000s\000h\000\040\000B\000a\000v\000a\000d\000i\000y\000a)
-/CreationDate (D:20260821102150+05'30')
-/ModDate (D:20260821102150+05'30')
+/Title(\376\377\000Y\000a\000s\000h\000\040\000B\000a\000v\000a\000d\000i\000y\000a\000\040\000-\000\040\000R\000e\000s\000u\000m\000e)/Subject(\376\377\000S\000o\000f\000t\000w\000a\000r\000e\000\040\000D\000e\000v\000e\000l\000o\000p\000e\000r\000\040\000I\000n\000t\000e\000r\000n\000\040\000R\000e\000s\000u\000m\000e\000\040\000-\000\040\000C\000+\000+\000,\000\040\000S\000y\000s\000t\000e\000m\000s\000,\000\040\000D\000a\000t\000a\000\040\000S\000t\000r\000u\000c\000t\000u\000r\000e\000s\000,\000\040\000A\000l\000g\000o\000r\000i\000t\000h\000m\000s\000,\000\040\000P\000e\000r\000f\000o\000r\000m\000a\000n\000c\000e)/Creator(\376\377\000p\000d\000f\000l\000a\000t\000e\000x)/Producer(\376\377\000Y\000a\000s\000h\000\040\000B\000a\000v\000a\000d\000i\000y\000a)
+/CreationDate (D:20260822155949+05'30')
+/ModDate (D:20260822155949+05'30')
 /Trapped /False
 /PTEX.Fullbanner (This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) kpathsea version 6.3.5)
 >>
@@ -1223,17 +1223,16 @@ endobj
 /W [1 3 1]
 /Root 114 0 R
 /Info 115 0 R
-/ID [<C44B6061D2665AC87E6CF1A5EB2530BF> <C44B6061D2665AC87E6CF1A5EB2530BF>]
-/Length 290       
+/ID [<A56FBB03F2C59AAF60E807C783E2684D> <A56FBB03F2C59AAF60E807C783E2684D>]
+/Length 291       
 /Filter /FlateDecode
 >>
 stream
-xÚ%ÑÉ.P€ásnQs‹š‡š)j¬y¦æ¡(¥ÑH$$vÂBl-<ƒ-ñ^Â+ØØrÿkóå_Ü“““+"òkD2» İ jnãB5Ã(h]ğ@´B2!Ú`¼í°9!Ø‚<È‡ˆA‚üPÅP(…2(‡
-¨„*¨†¨…:B=4¨ˆÏİÛ©rôîªš`	V 
-‹0ë°
-Ë°°=Ğ}ĞA‚aQ¹öº½£*o/®ÆT¾ü®ÆUÿ5¡zr5©zÿàjJõ5êjZçÛÕŒšà«Y5ãaWsjiûµÉgËá§%­–ÓaËYÌr~g¹ø°\>Z®İØ&$` 	)57ûî)%Å'e
+xÚ%ÑÉ.P€ás.5¥jJÍÔ<VÍjiK…HH$‹.šXÙˆx,=€G±²±·’pÿkóå_Ü“““+"òkD<aè^5·^¡Z 
+Z!Ym°ÈvØƒ\ÈƒØ…|(€NØ/BlCƒJ üP(‡
+¨„*¨†¨…:¨‡B#4©ˆÏİÛ­ròì*Í°«ƒ%X€XƒX‡EØ„>è‡„!†…1WIÿ¸½•·'W*WQÕÀMª5¸šR½¿q5­úq5£&ëÓÕ¬šà—«95Ñ«y5É„ıÚÔƒåøİrúm9[.b–ËŒåêÕr}gIÇİØ$á !Gj2öİ£_ş Ã'á
 endstream
 endobj
 startxref
-167002
+166930
 %%EOF
