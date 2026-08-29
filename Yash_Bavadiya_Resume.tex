@@ -21,7 +21,7 @@
   pdftitle={Yash Bavadiya - Resume},
   pdfauthor={Yash Bavadiya},
   pdfauthortitle={Software Engineering Intern},
-  pdfsubject={Software Engineering Intern Resume - C++, Python, TypeScript, Full Stack, GenAI, Distributed Systems},
+  pdfsubject={Software Engineering Intern Resume - Payments, Backend, Distributed Systems, TypeScript, C++, Java},
   pdfkeywords={
     C, C++, Python, JavaScript, TypeScript, SQL, MySQL, PostgreSQL,
     Object-Oriented Programming, OOP, Data Structures, Algorithms,
@@ -35,7 +35,9 @@
     React, Next.js, Node.js, Express, Prisma, Qt, MongoDB, Redis,
     WebSockets, Docker, Nginx, Linux, UNIX, REST APIs, TCP/IP,
     Git, GitHub Actions, Postman, Vercel, User Interface Design, Web Applications,
-    Software Engineering Intern, SDE, SWE, Backend, Frontend, Full Stack, Cloud, Payments,
+    Payments, Payment Systems, Webhooks, Idempotency, HMAC, Billing, Fintech, Financial Infrastructure,
+    Java, Ruby, Scala, Go, Systems Design, Testing, Code Review, API Design,
+    Software Engineering Intern, SDE, SWE, Backend, Frontend, Full Stack, Cloud,
     Jodhpur, Surat, India, Open to Work,
     xevrion
   },
@@ -211,11 +213,11 @@
     {\textbf{\normalsize{\underline{DaemonDoc}}} \footnotesize{(team of 2)} $|$ \href{https://github.com/xevrion/DaemonDoc}{\underline{GitHub}} $|$ \href{https://daemondoc.online}{\underline{Live}} $|$ \footnotesize{\textbf{TypeScript, LLM APIs, Express, MongoDB, Redis}}}{Jan 2026 -- May 2026}\\
     \vspace{8pt}
     \resumeItemListStart
-        \resumeItem{Built an \textbf{agentic LLM pipeline} on a \textbf{Redis (BullMQ)} job queue with webhook idempotency and loop guards, sustaining an \textbf{85\% success rate} across \textbf{959 production runs} over 68 repositories for \textbf{50 users}.}
+        \resumeItem{Owned the \textbf{payments and billing system} end to end: Razorpay checkout, a credits model, and \textbf{idempotent} webhook handling secured by \textbf{HMAC-SHA256} verification over the \textbf{raw request body} before parsing.}
         \vspace{2pt}
-        \resumeItem{Cut per-run API cost roughly \textbf{10x} through \textbf{context management}, routing file paths and token estimates, never file content, to a lightweight model to select context, with failover across 6 provider keys.}
+        \resumeItem{Built the \textbf{GitHub integration and prompt-construction layers} on a \textbf{Redis (BullMQ)} job queue with loop guards and optimistic concurrency, sustaining an \textbf{85\% success rate} across \textbf{959 production runs} over 68 repositories for \textbf{50 users}.}
         \vspace{2pt}
-        \resumeItem{Owned the \textbf{GitHub integration and prompt-construction layers}, plus a Razorpay billing system secured with \textbf{HMAC-SHA256} webhook signature verification.}
+        \resumeItem{Cut per-run API cost roughly \textbf{10x} by routing file paths and token estimates, never file content, to a lightweight model for context selection, with failover across 6 provider keys.}
     \resumeItemListEnd
     \vspace{-6pt}
 
@@ -233,7 +235,7 @@
           {\textbf{\normalsize{\underline{Photon}}} $|$ \href{https://github.com/xevrion/photon}{\underline{GitHub}} $|$ \footnotesize{\textbf{C++20, Linux, UDP Multicast, Lock-Free Concurrency}}}{Jun 2026 -- Jul 2026}\\
           \vspace{8pt}
           \resumeItemListStart
-            \resumeItem {Built a \textbf{NASDAQ ITCH 5.0 feed handler and matching engine}: zero-copy parsing, busy-polled UDP multicast, and a \textbf{lock-free SPSC ring}, reaching \textbf{38ns median parse} and \textbf{452ns} socket-to-consumed latency via \textbf{rdtscp} on a full day of real market data.}
+            \resumeItem {Built \textbf{financial market infrastructure} from the wire up: a \textbf{NASDAQ ITCH 5.0 feed handler and matching engine} with zero-copy parsing, busy-polled UDP multicast, and a \textbf{lock-free SPSC ring}, reaching \textbf{38ns median parse} and \textbf{452ns} socket-to-consumed latency via \textbf{rdtscp} on a full day of real market data.}
             \vspace{2pt}
         \resumeItem{Sustained \textbf{89k messages/sec} across \textbf{826 concurrent price-time priority order books} with zero hot-path heap allocation; verified by \textbf{27 GoogleTest cases}, \textbf{ASan/UBSan} presets, and clang-tidy CI.}
           \resumeItemListEnd
