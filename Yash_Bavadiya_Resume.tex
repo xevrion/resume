@@ -21,16 +21,15 @@
   pdftitle={Yash Bavadiya - Resume},
   pdfauthor={Yash Bavadiya},
   pdfauthortitle={Software Engineer},
-  pdfsubject={Software Engineer Resume - C++, TypeScript, Node.js, React},
+  pdfsubject={Software Engineer Resume - Systems, Rust, C++, TypeScript, Distributed Systems, Developer Tools, AI},
   pdfkeywords={
-    C, C++, Python, JavaScript, TypeScript, MySQL,
-    React, Next.js, Express, Prisma, Qt, PostgreSQL, MongoDB, Redis,
-    WebSockets, WebRTC, Firebase, Docker, Linux, UNIX, REST APIs, TCP/IP,
-    Git, Nginx, GitHub Actions, Vercel, Postman,
-    Data Structures, Algorithms, System Design, Distributed Systems,
-    Software Engineer, SDE, Full Stack, Backend, Frontend,
-    Surat, Jodhpur, India, Open to Work,
-    xevrion
+    C++, Rust, TypeScript, JavaScript, Python, C, SQL, Qt, WebAssembly,
+    Distributed Systems, Discrete-Event Simulation, Deterministic Simulation Testing, Fault Injection,
+    Systems Design, Operating Systems, Computer Networks, Concurrency, Data Structures, Algorithms,
+    Object-Oriented Programming, Software Design, Testing, CI/CD, GitHub Actions, Code Review, Open Source,
+    Developer Relations, Developer Tools, Model Context Protocol, MCP, LLM, RAG, Agentic AI, FAISS,
+    React, Node.js, Cloudflare Workers, PostgreSQL, SQLite, Redis, WebSockets, Docker, Linux,
+    Software Engineer, SDE, SWE, Backend, Full Stack, Systems, IIT Jodhpur, xevrion
   },
   pdfcreator={pdflatex},
   pdfproducer={Yash Bavadiya},
@@ -50,7 +49,7 @@
 \usepackage{graphicx}
 \setlength{\multicolsep}{-3.0pt}
 \setlength{\columnsep}{-1pt}
-\input{glyphtounicode}
+\ifdefined\pdfgentounicode\input{glyphtounicode}\fi
 \usepackage{amsmath}
 
 \RequirePackage{tikz}
@@ -92,7 +91,7 @@
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
-\pdfgentounicode=1
+\ifdefined\pdfgentounicode\pdfgentounicode=1\fi
 
 %-------------------------
 % Custom commands
@@ -131,16 +130,15 @@
 \begin{document}
 
 %----------HEADING----------
-
 \begin{center}
     {\Huge \scshape Yash Bavadiya} \\ \vspace{1pt}
-    \small \href{tel:+91-9879163975}{\underline{+91-9879163975}} ~ 
-    \href{mailto:krbavadiya11@gmail.com}{\underline{krbavadiya11@gmail.com}} ~ 
-    \href{https://www.xevrion.dev/}{\underline{Portfolio}} ~ 
-    \href{https://linkedin.com/in/yash-bavadiya}
-    {\underline{LinkedIn}} ~
+    \small \href{tel:+91-9879163975}{\underline{+91-9879163975}} ~
+    \href{mailto:krbavadiya11@gmail.com}{\underline{krbavadiya11@gmail.com}} ~
+    \href{https://www.xevrion.dev/}{\underline{Portfolio}} ~
+    \href{https://linkedin.com/in/yash-bavadiya}{\underline{LinkedIn}} ~
     \href{https://github.com/xevrion}{\underline{GitHub}} ~
-    \href{https://leetcode.com/u/xevrion/}{\underline{LeetCode}} ~ 
+    \href{https://x.com/xevrion_the1}{\underline{X}} ~
+    \href{https://leetcode.com/u/xevrion/}{\underline{LeetCode}}
 \end{center}
 \vspace{-16pt}
 
@@ -154,41 +152,49 @@
   \vspace{-12pt}
 
 %------TECHNICAL SKILLS-------
-
 \section{\large{TECHNICAL SKILLS}}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{\small{Languages:}}{  \small{C, C++, Python, JavaScript, TypeScript, MySQL}} \\ \vspace{1pt}
-     \textbf{\small{Technologies/Frameworks:}}{  \small{React, Next.js, Express, Prisma, Qt (C++), PostgreSQL, MongoDB, Redis, WebSockets, WebRTC, Firebase, Docker, Linux/UNIX environments, Relational Databases, REST APIs, TCP/IP}} \\ \vspace{1pt}
-     \textbf{\small{Tools:}}{  \small{Git, Nginx, GitHub Actions, Vercel, Postman, VS Code}} \\ \vspace{1pt}
-     \textbf{\small{Core Competencies:}}{  \small{Data Structures and Algorithms, Object-Oriented Programming, Operating Systems, System Design, Distributed Systems, REST APIs}} \\
+     \textbf{\small{Languages:}}{ \small{C++, Rust, TypeScript, JavaScript, Python, C, SQL}} \\ \vspace{1pt}
+     \textbf{\small{Systems \& AI:}}{ \small{Distributed Systems, Discrete-Event Simulation, Concurrency, OS, Networks, DBMS, RAG, LLM Agents, MCP}} \\ \vspace{1pt}
+     \textbf{\small{Technologies:}}{ \small{Qt, React, Node.js, WebAssembly, Cloudflare Workers, PostgreSQL, SQLite, Redis, Docker, Linux, GitHub Actions}}
     }}
  \end{itemize}
-
  \vspace{-16pt}
+
 %-----------EXPERIENCE-----------
 \section{\large{EXPERIENCE}}
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {\normalsize{\underline{Google Summer of Code 2026}} }{May 2026 -- Aug 2026}
-      {{\normalsize{\textbf{\underline{Kdenlive @KDE Community}}}} $|$ Open Source Contributor, C++ and Qt}{Remote}
+      {\normalsize{\underline{Workers IO (YC F26)}}}{Sep 2026 -- Present}
+      {{\normalsize{\textbf{Developer Relations Engineer}}} $|$ Deterministic simulation testing}{Remote (San Francisco)}
       \vspace{-5pt}
       \resumeItemListStart
-        \resumeItem{Secured selection for \textbf{GSoC 2026} among 1,200 global contributors to implement Kdenlive's \textbf{RGB curve editor, gradient editor, and speed ramp widgets} in C++ and Qt.}
+        \resumeItem{Recruited by the founder after building \href{https://breakscale.tech}{\textbf{\underline{Breakscale}}}, an open-source system design simulator on a \textbf{discrete-event engine}; now its core maintainer with \textbf{2,000+ GitHub stars}, 168 forks, \textbf{1,200+ tests} and 31 merged PRs from \textbf{15 outside contributors}.}
         \vspace{2pt}
-        \resumeItem{Integrated \textbf{20 contributions} across Kdenlive and upstream repositories, resolving an \textbf{11-year-old bug} via a gap-detection algorithm shipping to \textbf{41,000 monthly Flathub installs}.}
+        \resumeItem{Shipped \textbf{fault injection} (crash, slow, partition, packet loss) and \textbf{deterministic replay links}: the same seed and faults replay the exact failure from one shareable URL.}
+        \vspace{2pt}
+        \resumeItem{Built \textbf{breakscale-mcp}, an \textbf{MCP server} that lets AI assistants model any codebase as a runnable simulation, plus a \textbf{VS Code extension}; Breakscale is in the \textbf{Vercel}, \textbf{Claude} and \textbf{Mintlify} open-source programs.}
       \resumeItemListEnd
 
-      \resumeSubheading
-      {\normalsize{\underline{Undergraduate Researcher}} }{Jul 2025 -- Nov 2025} 
-      {{\normalsize{\textbf{\underline{Indian Institute of Technology, Jodhpur}}}} $|$ Supervisor: Dr. Pratik Mazumder}{IIT Jodhpur}
-      \vspace{-4pt}
+    \resumeSubheading
+      {\normalsize{\underline{Google Summer of Code 2026}}}{May 2026 -- Aug 2026}
+      {{\normalsize{\textbf{Kdenlive @KDE Community}}} $|$ Open Source Contributor, C++ and Qt}{Remote}
+      \vspace{-5pt}
       \resumeItemListStart
-        \resumeItem {Engineered an offline \textbf{Retrieval-Augmented Generation pipeline} integrating FAISS vector search with 4-bit quantized Phi-3 and Flan-T5-XL, achieving a \textbf{+71.77\% average improvement} across 8 ROUGE metrics.}
-        \vspace{3pt}
-        \resumeItem {Attained \textbf{3 second query latency} on 300-page PDFs and deployed the solution to \textbf{15 IIT Jodhpur students} during semester exams across 3 feedback-driven iterations.}
-      \resumeItemListEnd  
+        \resumeItem{Designed and shipped \textbf{per-channel RGB curves}, a \textbf{multi-stop gradient editor} and \textbf{time-remap keyframe types} in \textbf{C++ and Qt}, all merged for \textbf{Kdenlive 26.08}, an editor with \textbf{41,000 monthly Flathub installs}.}
+        \vspace{2pt}
+        \resumeItem{Fixed an \textbf{11-year-old bug} (reported 2015) with an interval-merging \textbf{gap-detection algorithm}; \textbf{23 merge requests} merged across Kdenlive and KDE's developer docs after core-maintainer review.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {\normalsize{\underline{Undergraduate Researcher}}}{Jul 2025 -- Nov 2025}
+      {{\normalsize{\textbf{Indian Institute of Technology, Jodhpur}}} $|$ Supervisor: Dr. Pratik Mazumder}{Jodhpur}
+      \vspace{-5pt}
+      \resumeItemListStart
+        \resumeItem{Built the retrieval pipeline of an \textbf{offline RAG system} over 300-page PDFs with \textbf{FAISS} and \textbf{4-bit quantized Phi-3}, answering in \textbf{$\sim$3 seconds} on a laptop GPU; benchmarked models and prompts with ROUGE (\textbf{+71.77\%} over baseline).}
+      \resumeItemListEnd
 
   \resumeSubHeadingListEnd
 \vspace{-6pt}
@@ -200,82 +206,57 @@
     \vspace{-4pt}
 
     \resumeProjectHeading
-    {\textbf{\normalsize{\underline{Flock}}} $|$ \href{https://github.com/xevrion/flock}{\underline{GitHub}} $|$ \href{https://www.npmjs.com/package/@xevrion/flock-react}{\underline{npm}} $|$ \footnotesize{\textbf{TypeScript, WebSocket, Redis, React, Docker}}}{Feb 2026 -- Jun 2026}\\
+    {\textbf{\normalsize{\underline{HatchZip}}} $|$ \href{https://github.com/xevrion/hatchzip}{\underline{GitHub}} $|$ \href{https://hatchzip.dev}{\underline{Website}} $|$ \footnotesize{\textbf{Rust, Slint, ZIP/7z/RAR}}}{Oct 2026}\\
     \vspace{8pt}
     \resumeItemListStart
-        \resumeItem{Released 3 npm packages enabling multiplayer cursors and live presence in web applications via a \textbf{10-line integration}, installable as a \textbf{55MB} self-hosted Docker image or npx.}
+        \resumeItem{Archive extractor that \textbf{frees disk space while it extracts}, by unpacking from the end and truncating the archive; \textbf{2,700+ stars}, \textbf{27,000+ downloads}, the \textbf{\#1 most-starred new Rust repo} of its launch week, listed on FMHY next to 7-Zip.}
         \vspace{2pt}
-        \resumeItem{Implemented Redis pub/sub message relay across server instances with keyspace-notification-driven user eviction, reducing stale presence state to under \textbf{30 seconds} on ungraceful disconnects.}
-        \vspace{2pt}
-        \resumeItem{Delivered cursor position smoothing with continuous mid-animation target updates, exponential backoff reconnection, and \textbf{58 tests} covering throttling, time-to-live eviction, and message delivery.}
-    \resumeItemListEnd
-    \vspace{-6pt}
-
-     \resumeProjectHeading
-    {\textbf{\normalsize{\underline{DaemonDoc}}} $|$ \href{https://github.com/xevrion/DaemonDoc}{\underline{GitHub}} $|$ \href{https://daemondoc.online}{\underline{Live}} $|$ \footnotesize{\textbf{TypeScript, Express, MongoDB, Redis (BullMQ), Docker}}}{Jan 2026 -- May 2026}\\
-    \vspace{8pt}
-    \resumeItemListStart
-        \resumeItem{Automated README generation on git push via GitHub Webhooks, achieving an \textbf{85\% success rate} across \textbf{959 automation runs} processing 68 active repositories for \textbf{50 users}.}
-        \vspace{2pt}
-        \resumeItem{Architected a Redis (BullMQ) job pipeline with exponential backoff and fault tolerance, reducing token costs by \textbf{70\%} via source file filtering before prompt construction.}
-        \vspace{2pt}
-        \resumeItem{Orchestrated \textbf{4 services} with Docker Compose, configuring an Nginx reverse proxy and GitHub Actions pipeline to enable zero-downtime deployments.}
+        \resumeItem{\textbf{Crash-safe by design}: CI kills the process at every write step and verifies every file byte for byte, with \textbf{130+ tests} on Linux, macOS and Windows; fixed and published \textbf{2 security advisories} from outside researchers.}
     \resumeItemListEnd
     \vspace{-6pt}
 
     \resumeProjectHeading
-          {\textbf{\normalsize{\underline{IIT Jodhpur PHC System}}} $|$ \href{https://github.com/xevrion/iitj-phc-system}{\underline{GitHub}} $|$ \footnotesize{\textbf{Node.js, Express, PostgreSQL, Prisma, Docker}}}{Jan 2026 -- Apr 2026}\\
-          \vspace{8pt}
-          \resumeItemListStart
-            \resumeItem {Spearheaded backend architecture to replace a paper-based workflow with a permission-based platform featuring \textbf{6 roles, 63 endpoints, and 20 database models} using JSON Web Token and LDAP authentication.}
-            \vspace{2pt}
-        \resumeItem{Verified reliability via \textbf{48 test cases} and load tests at \textbf{20 concurrent users}, securing production deployment approval projecting \textbf{5 staff-hours saved per day}.}
-          \resumeItemListEnd 
-          
+    {\textbf{\normalsize{\underline{gyotaku}}} $|$ \href{https://github.com/xevrion/gyotaku}{\underline{GitHub}} $|$ \href{https://gyotaku.app}{\underline{Website}} $|$ \footnotesize{\textbf{Rust, ONNX Runtime OCR, SQLite FTS5}}}{Oct 2026}\\
+    \vspace{8pt}
+    \resumeItemListStart
+        \resumeItem{Offline OCR search for your screenshots folder: \textbf{1--10 ms per keystroke} across 5,000+ screenshots at 37 MB idle memory; \textbf{390+ stars} and \textbf{4,000+ downloads} on macOS, Windows and Linux.}
+    \resumeItemListEnd
+    \vspace{-6pt}
+
+    \resumeProjectHeading
+    {\textbf{\normalsize{\underline{toPSD}}} $|$ \href{https://topsd.app}{\underline{Website}} $|$ \footnotesize{\textbf{Rust to WebAssembly, TypeScript, Cloudflare Workers}}}{Oct 2026}\\
+    \vspace{8pt}
+    \resumeItemListStart
+        \resumeItem{Converts Procreate files to layered Photoshop files \textbf{entirely in the browser}; built and shipped in a day, \textbf{\#1 Product of the Day} on Fazier, with first paying customers from organic search.}
+    \resumeItemListEnd
+    \vspace{-6pt}
+
+    \resumeProjectHeading
+    {\textbf{\normalsize{\underline{Flock}}} $|$ \href{https://github.com/xevrion/flock}{\underline{GitHub}} $|$ \href{https://www.npmjs.com/package/@xevrion/flock-react}{\underline{npm}} $|$ \footnotesize{\textbf{TypeScript, WebSocket, Redis, Docker}}}{Jun 2026}\\
+    \vspace{8pt}
+    \resumeItemListStart
+        \resumeItem{Multiplayer cursors and presence in 10 lines: a horizontally scalable \textbf{Redis pub/sub relay} with TTL-based eviction of dead clients; 3 npm packages with \textbf{1,100+ downloads} and \textbf{58 tests}.}
+    \resumeItemListEnd
+    \vspace{-6pt}
+
+    \resumeProjectHeading
+    {\textbf{\normalsize{\underline{Game Boy Emulator}}} $|$ \href{https://github.com/xevrion/gbemulator}{\underline{GitHub}} $|$ \footnotesize{\textbf{C++20, SDL2}}}{Jul 2026}\\
+    \vspace{8pt}
+    \resumeItemListStart
+        \resumeItem{Emulator implementing all \textbf{501 CPU opcodes}; passes all \textbf{11 Blargg CPU test ROMs} and boots Pok\'emon Red.}
+    \resumeItemListEnd
+
     \resumeSubHeadingListEnd
 \vspace{-6pt}
 
-%-----------COURSEWORK-----------
-\section{\large{COURSEWORK}}
-        \begin{multicols}{3}
-            \begin{itemize}[itemsep=-2pt, parsep=2pt]
-        
-                \item\small Data Structures and Algorithms
-                \item\small Object-Oriented Programming
-                \item\small Operating Systems
-
-                \item\small Database Management Systems
-
-                \item\small Software Engineering
-                \item\small Machine Learning
-                \item\small Discrete Mathematics
-
-                \item\small Pattern Recognition
-                \item\small Probability and Statistics
-          
-            \end{itemize}
-        \end{multicols}
- \vspace{4pt}
-
 %-----------ACHIEVEMENTS-----------
  \section{\large{ACHIEVEMENTS}}
-          \begin{itemize}[leftmargin=0.15in]
-                \resumeItem{JEE Advanced 2024: AIR \textbf{3449}; JEE Main 2024: \textbf{99.65} percentile, AIR \textbf{5680}.}
-                \vspace{2pt}
-                \resumeItem{Achieved Max Rating of \textbf{1429} on Codeforces; solved \textbf{450+} algorithmic problems on LeetCode in C++.}
-                \vspace{2pt}
-                \resumeItem{Merged \textbf{84+ open-source contributions} across GitHub and GitLab, shipping features and bug fixes to \href{https://invent.kde.org/multimedia/kdenlive}{\textbf{\underline{Kdenlive}}}, \href{https://github.com/vitest-dev/vitest}{\textbf{\underline{Vitest}}}, \href{https://github.com/wagtail/wagtail}{\textbf{\underline{Wagtail}}}, and \href{https://github.com/schollz/croc}{\textbf{\underline{croc}}}.}
-          \end{itemize}
- \vspace{-8pt}
+  \begin{itemize}[leftmargin=0.15in]
+    \resumeItem{\textbf{Open source:} fixes merged into \href{https://github.com/denoland/deno}{\textbf{\underline{Deno}}}, \href{https://github.com/adobe/react-spectrum}{\textbf{\underline{Adobe React Spectrum}}}, \href{https://github.com/kubernetes-sigs/headlamp}{\textbf{\underline{Kubernetes SIGs}}}, \href{https://github.com/nlohmann/json}{\textbf{\underline{nlohmann/json}}}, \href{https://github.com/vitest-dev/vitest}{\textbf{\underline{Vitest}}}, \href{https://github.com/nuxt/nuxt}{\textbf{\underline{Nuxt}}} and \href{https://github.com/jj-vcs/jj}{\textbf{\underline{jj}}}; maintainer reviewing PRs from 15+ contributors.}
+    \resumeItem{\textbf{Building in public:} \textbf{3,000+ followers} on X, \textbf{3.9M impressions} in 3 months; HatchZip's launch post hit \textbf{1.9M views}.}
+    \resumeItem{\textbf{Coursework:} designed a TAGE-SC branch predictor with \textbf{2.9\% fewer mispredictions} than ChampSim's best built-in predictor across 10 SPEC CPU 2017 traces.}
+    \resumeItem{JEE Advanced 2024 AIR \textbf{3449} of 180,000+; JEE Main \textbf{99.65} percentile; \textbf{450+} LeetCode problems; Codeforces max \textbf{1429}.}
+    \resumeItem{\textbf{Junior Core}, DevlUp Labs: mentored 30 students into open source and ran 2 workshops; \textbf{Core Member}, Programming Club and E-Cell.}
+  \end{itemize}
 
-%-----------LEADERSHIP-----------
- \section{\large{LEADERSHIP}}
-          \begin{itemize}[leftmargin=0.15in]
-                \resumeItem{\textbf{Junior Core Team Member} at DevlUp Labs, IIT Jodhpur; mentored 30 students and facilitated 2 open-source workshops.}
-                \vspace{2pt}
-                \resumeItem{\textbf{Core Member} at E-Cell, IIT Jodhpur; supported 3 entrepreneurship events and initiatives over 9 months.}
-                \vspace{2pt}
-                \resumeItem{\textbf{Core Member} at Programming Club, IIT Jodhpur; co-organized 5 contests and 10 sessions on competitive programming.}
-          \end{itemize}
- 
- \end{document}
+\end{document}
