@@ -44,7 +44,6 @@
 }
 \usepackage[english]{babel}
 \usepackage{tabularx}
-\usepackage[normalem]{ulem}
 \usepackage{fontawesome5}
 \usepackage{multicol}
 \usepackage{graphicx}
@@ -96,8 +95,6 @@
 
 %-------------------------
 % Custom commands
-\newcommand{\ul}[1]{\uline{#1}}
-\newcommand{\lnk}[2]{\href{#1}{\uline{#2}}}
 \newcommand{\resumeItem}[1]{
   \item\small{
     {#1 \vspace{-5pt}}
@@ -122,6 +119,9 @@
 
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-8pt}}
 
+\let\oldunderline\underline
+\renewcommand{\underline}[1]{\oldunderline{#1\vphantom{gjpqy}}}
+
 \renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
@@ -135,13 +135,13 @@
 %----------HEADING----------
 \begin{center}
     {\Huge \scshape Yash Bavadiya} \\ \vspace{1pt}
-    \small \lnk{tel:+91-9879163975}{+91-9879163975} ~
-    \lnk{mailto:krbavadiya11@gmail.com}{krbavadiya11@gmail.com} ~
-    \lnk{https://www.xevrion.dev/}{Portfolio} ~
-    \lnk{https://linkedin.com/in/yash-bavadiya}{LinkedIn} ~
-    \lnk{https://github.com/xevrion}{GitHub} ~
-    \lnk{https://x.com/xevrion_the1}{X} ~
-    \lnk{https://leetcode.com/u/xevrion/}{LeetCode}
+    \small \href{tel:+91-9879163975}{\underline{+91-9879163975}} ~
+    \href{mailto:krbavadiya11@gmail.com}{\underline{krbavadiya11@gmail.com}} ~
+    \href{https://www.xevrion.dev/}{\underline{Portfolio}} ~
+    \href{https://linkedin.com/in/yash-bavadiya}{\underline{LinkedIn}} ~
+    \href{https://github.com/xevrion}{\underline{GitHub}} ~
+    \href{https://x.com/xevrion_the1}{\underline{X}} ~
+    \href{https://leetcode.com/u/xevrion/}{\underline{LeetCode}}
 \end{center}
 \vspace{-16pt}
 
@@ -170,35 +170,35 @@
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {\normalsize{\ul{Workers IO (YC F26)}}}{Sep 2026 -- Present}
+      {\normalsize{\underline{Workers IO (YC F26)}}}{Sep 2026 -- Present}
       {{\normalsize\textbf{Developer Relations Engineer}} $|$ Deterministic simulation testing}{Remote (San Francisco)}
       \vspace{-5pt}
       \resumeItemListStart
-        \resumeItem{Earned a founder-led hire by building \textbf{Breakscale}, an open-source system design simulator, then grew it as core maintainer to \textbf{2,000+ GitHub stars}, 168 forks and \textbf{1,200+ tests}, merging 31 PRs from \textbf{15 outside contributors}.}
+        \resumeItem{Built \textbf{Breakscale}, an open-source system design simulator that led to a founder-led hire, and scaled it to \textbf{2,000+ GitHub stars} and 168 forks with \textbf{1,200+ tests} and 31 PRs from \textbf{15 outside contributors}.}
         \vspace{2pt}
-        \resumeItem{Engineered a \textbf{discrete-event engine} (a time-ordered event queue) where queue buildup, timeouts, retry storms and circuit-breaker trips emerge from simulation, not formulas, across \textbf{33 component types}.}
+        \resumeItem{Engineered a \textbf{discrete-event engine} modeling queue buildup, timeouts, retry storms, and circuit-breaker trips dynamically across \textbf{33 component types}.}
         \vspace{2pt}
-        \resumeItem{Shipped \textbf{fault injection} (crash, slow, partition, packet loss) with \textbf{deterministic replay links}: the same seed and fault log replay the exact failure from one shareable URL.}
+        \resumeItem{Shipped \textbf{fault injection} (crash, slow, partition, packet loss) with \textbf{deterministic replay links}, allowing the exact failure to be replayed from a single shareable URL using identical seeds and fault logs.}
         \vspace{2pt}
-        \resumeItem{Launched \textbf{breakscale-mcp}, an \textbf{MCP server} that lets AI assistants model a codebase as a runnable simulation, plus a \textbf{VS Code extension}; Breakscale is in the Vercel, Claude and Mintlify open-source programs.}
+        \resumeItem{Launched \textbf{breakscale-mcp} (an \textbf{MCP server} for AI code simulation) and a \textbf{VS Code extension}, alongside Breakscale's acceptance into the Vercel, Claude, and Mintlify open-source programs.}
       \resumeItemListEnd
 
     \resumeSubheading
-      {\normalsize{\ul{Google Summer of Code 2026}}}{May 2026 -- Aug 2026}
+      {\normalsize{\underline{Google Summer of Code 2026}}}{May 2026 -- Aug 2026}
       {{\normalsize\textbf{Kdenlive @KDE Community}} $|$ Open Source Contributor, C++ and Qt}{Remote}
       \vspace{-5pt}
       \resumeItemListStart
-        \resumeItem{Designed and shipped \textbf{per-channel RGB curves}, a \textbf{multi-stop gradient editor} and \textbf{time-remap keyframe types} in \textbf{C++ and Qt}, wired into Kdenlive's MLT filter pipeline and merged for \textbf{Kdenlive 26.08} (41,000 monthly Flathub installs).}
+        \resumeItem{Designed and shipped \textbf{per-channel RGB curves}, a \textbf{multi-stop gradient editor}, and \textbf{time-remap keyframe types} in \textbf{C++ and Qt}, wired into Kdenlive's MLT filter pipeline for \textbf{Kdenlive 26.08} (41,000 monthly Flathub installs).}
         \vspace{2pt}
-        \resumeItem{Resolved an \textbf{11-year-old bug} (reported 2015) with an interval-merging \textbf{gap-detection algorithm}, collaborating with core maintainers through review to merge \textbf{23 merge requests}.}
+        \resumeItem{Resolved an \textbf{11-year-old bug} via an interval-merging \textbf{gap-detection algorithm}, landing \textbf{23 merge requests} through close collaboration and code review with core maintainers.}
       \resumeItemListEnd
 
     \resumeSubheading
-      {\normalsize{\ul{Undergraduate Researcher}}}{Jul 2025 -- Nov 2025}
+      {\normalsize{\underline{Undergraduate Researcher}}}{Jul 2025 -- Nov 2025}
       {{\normalsize\textbf{Indian Institute of Technology, Jodhpur}} $|$ Supervisor: Dr. Pratik Mazumder}{Jodhpur}
       \vspace{-5pt}
       \resumeItemListStart
-        \resumeItem{Developed the retrieval pipeline of an \textbf{offline RAG system} over 300-page PDFs with \textbf{FAISS} vector search and a \textbf{4-bit quantized Phi-3}, answering in \textbf{$\sim$3 s} on a laptop GPU; benchmarked models and prompts on ROUGE (\textbf{+71.77\%} over baseline).}
+        \resumeItem{Developed the retrieval pipeline of an \textbf{offline RAG system} over 300-page PDFs using \textbf{FAISS} vector search and a \textbf{4-bit quantized Phi-3}, achieving \textbf{$\sim$3 s} latency on a laptop GPU and a \textbf{+71.77\%} ROUGE gain over baseline.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
@@ -211,42 +211,42 @@
     \vspace{-4pt}
 
     \resumeProjectHeading
-    {\textbf{\normalsize{\ul{HatchZip}}} $|$ \lnk{https://github.com/xevrion/hatchzip}{GitHub} $|$ \lnk{https://hatchzip.dev}{Website} $|$ \footnotesize{\textbf{Rust, Slint, ZIP/7z/RAR/tar}}}{Oct 2026}\\
+    {\textbf{\normalsize{\underline{HatchZip}}} $|$ \href{https://github.com/xevrion/hatchzip}{\underline{GitHub}} $|$ \href{https://hatchzip.dev}{\underline{Website}} $|$ \footnotesize{\textbf{Rust, Slint, ZIP/7z/RAR/tar}}}{Oct 2026}\\
     \vspace{8pt}
     \resumeItemListStart
-        \resumeItem{Architected an archive extractor that \textbf{frees disk space while extracting}: saves the index aside, extracts from the last entry backwards and \textbf{truncates the archive} after each batch, \textbf{punching holes} in \texttt{.tar.gz} streams.}
+        \resumeItem{Architected an archive extractor that \textbf{frees disk space during extraction} by saving the index aside, extracting backward, and \textbf{truncating the archive} after each batch, or \textbf{punching holes} in \texttt{.tar.gz} streams.}
         \vspace{2pt}
-        \resumeItem{Guaranteed \textbf{crash safety} through ordered writes, validated by tests that kill the process at every write, save and truncate, then resume and diff every file; \textbf{130+ tests} verify freed space on ext4, APFS and NTFS.}
+        \resumeItem{Guaranteed \textbf{crash safety} via ordered writes and rigorous disruption testing, implementing \textbf{130+ tests} to verify freed space across ext4, APFS, and NTFS filesystems.}
         \vspace{2pt}
-        \resumeItem{Achieved \textbf{5x faster} extraction than \texttt{unzip} (0.3 s vs 1.5 s on 200 MB); reached \textbf{2,700+ stars}, \textbf{27,000+ downloads} and \textbf{\#1 new Rust repo} of its launch week; patched \textbf{2 security advisories}.}
+        \resumeItem{Achieved \textbf{5x faster} extraction than \texttt{unzip}, reaching \textbf{2,700+ stars}, \textbf{27,000+ downloads}, and the \textbf{\#1 new Rust repo} ranking while patching \textbf{2 security advisories}.}
     \resumeItemListEnd
     \vspace{-6pt}
 
     \resumeProjectHeading
-    {\textbf{\normalsize{\ul{gyotaku}}} $|$ \lnk{https://github.com/xevrion/gyotaku}{GitHub} $|$ \lnk{https://gyotaku.app}{Website} $|$ \footnotesize{\textbf{Rust, GPUI, ONNX Runtime, SQLite FTS5}}}{Oct 2026}\\
+    {\textbf{\normalsize{\underline{gyotaku}}} $|$ \href{https://github.com/xevrion/gyotaku}{\underline{GitHub}} $|$ \href{https://gyotaku.app}{\underline{Website}} $|$ \footnotesize{\textbf{Rust, GPUI, ONNX Runtime, SQLite FTS5}}}{Oct 2026}\\
     \vspace{8pt}
     \resumeItemListStart
-        \resumeItem{Created offline search over every screenshot by the text inside it, piping new screenshots through \textbf{PaddleOCR on ONNX Runtime} into a \textbf{SQLite FTS5 trigram index} that highlights matches in place.}
+        \resumeItem{Engineered offline search over screenshots by processing text through \textbf{PaddleOCR on ONNX Runtime} into a \textbf{SQLite FTS5 trigram index} that highlights matches in place.}
         \vspace{2pt}
-        \resumeItem{Optimized search to \textbf{1--10 ms per keystroke} across 5,000+ screenshots at \textbf{37 MB idle memory}; shipped on macOS, Windows and Linux with \textbf{390+ stars} and \textbf{4,000+ downloads}.}
+        \resumeItem{Optimized search latency to \textbf{1--10 ms per keystroke} across 5,000+ screenshots at \textbf{37 MB idle memory}, shipping across macOS, Windows, and Linux to achieve \textbf{390+ stars} and \textbf{4,000+ downloads}.}
     \resumeItemListEnd
     \vspace{-6pt}
 
     \resumeProjectHeading
-    {\textbf{\normalsize{\ul{Flock}}} $|$ \lnk{https://github.com/xevrion/flock}{GitHub} $|$ \lnk{https://www.npmjs.com/package/@xevrion/flock-react}{npm} $|$ \footnotesize{\textbf{TypeScript, WebSocket, Redis, React, Docker}}}{Jun 2026}\\
+    {\textbf{\normalsize{\underline{Flock}}} $|$ \href{https://github.com/xevrion/flock}{\underline{GitHub}} $|$ \href{https://www.npmjs.com/package/@xevrion/flock-react}{\underline{npm}} $|$ \footnotesize{\textbf{TypeScript, WebSocket, Redis, React, Docker}}}{Jun 2026}\\
     \vspace{8pt}
     \resumeItemListStart
-        \resumeItem{Implemented multiplayer cursors and presence in a \textbf{10-line React integration}, scaling servers horizontally via a \textbf{Redis pub/sub relay} with \textbf{keyspace notifications} evicting dropped clients.}
+        \resumeItem{Implemented multiplayer cursors and presence in a \textbf{10-line React integration}, scaling servers horizontally via a \textbf{Redis pub/sub relay} using \textbf{keyspace notifications} to evict dropped clients.}
         \vspace{2pt}
-        \resumeItem{Delivered throttling, mid-animation cursor smoothing and \textbf{exponential-backoff reconnects}; published 3 npm packages with \textbf{1,100+ downloads} and \textbf{58 tests}.}
+        \resumeItem{Delivered throttling, mid-animation cursor smoothing, and \textbf{exponential-backoff reconnects}, publishing 3 npm packages to achieve \textbf{1,100+ downloads} alongside \textbf{58 tests}.}
     \resumeItemListEnd
     \vspace{-6pt}
 
     \resumeProjectHeading
-    {\textbf{\normalsize{\ul{Game Boy Emulator}}} $|$ \lnk{https://github.com/xevrion/gbemulator}{GitHub} $|$ \footnotesize{\textbf{C++20, SDL2, CMake}}}{Jul 2026}\\
+    {\textbf{\normalsize{\underline{Game Boy Emulator}}} $|$ \href{https://github.com/xevrion/gbemulator}{\underline{GitHub}} $|$ \footnotesize{\textbf{C++20, SDL2, CMake}}}{Jul 2026}\\
     \vspace{8pt}
     \resumeItemListStart
-        \resumeItem{Emulated the Game Boy from scratch: a CPU with all \textbf{501 opcodes}, 5 interrupts, a DIV-based timer, PPU and \textbf{MBC1/MBC3} banking; passes all \textbf{11 Blargg CPU test ROMs} and \textbf{dmg-acid2}, and boots Pok\'emon Red.}
+        \resumeItem{Emulated the Game Boy from scratch featuring a CPU with all \textbf{501 opcodes}, 5 interrupts, a DIV-based timer, PPU, and \textbf{MBC1/MBC3} banking, successfully passing all \textbf{11 Blargg CPU tests} and booting Pok\'emon Red.}
     \resumeItemListEnd
 
     \resumeSubHeadingListEnd
@@ -255,10 +255,11 @@
 %-----------ACHIEVEMENTS-----------
  \section{\large{ACHIEVEMENTS}}
   \begin{itemize}[leftmargin=0.15in]
-    \resumeItem{\textbf{Open source:} contributed fixes merged into \lnk{https://github.com/denoland/deno}{Deno}, \lnk{https://github.com/adobe/react-spectrum}{Adobe React Spectrum}, \lnk{https://github.com/kubernetes-sigs/headlamp}{Kubernetes SIGs}, \lnk{https://github.com/nlohmann/json}{nlohmann/json}, \lnk{https://github.com/vitest-dev/vitest}{Vitest}, \lnk{https://github.com/nuxt/nuxt}{Nuxt} and \lnk{https://github.com/jj-vcs/jj}{jj}.}
-    \resumeItem{\textbf{Building in public:} grew to \textbf{3,000+ followers} on X and \textbf{3.9M impressions} in 3 months; HatchZip's launch hit \textbf{1.9M views}.}
-    \resumeItem{Ranked AIR \textbf{3449} of 180,000+ in JEE Advanced 2024; JEE Main \textbf{99.65} percentile; \textbf{450+} LeetCode solved; Codeforces max \textbf{1429}.}
-    \resumeItem{Mentored \textbf{30 students} into open source and led 2 workshops at DevlUp Labs; Core Member, Programming Club and E-Cell.}
+    \resumeItem{\textbf{Open source:} Contributed merged fixes to \href{https://github.com/denoland/deno}{\underline{Deno}}, \href{https://github.com/adobe/react-spectrum}{\underline{Adobe React Spectrum}}, \href{https://github.com/kubernetes-sigs/headlamp}{\underline{Kubernetes SIGs}}, \href{https://github.com/nlohmann/json}{\underline{nlohmann/json}}, \href{https://github.com/vitest-dev/vitest}{\underline{Vitest}}, \href{https://github.com/nuxt/nuxt}{\underline{Nuxt}}, and \href{https://github.com/jj-vcs/jj}{\underline{jj}}.}
+    \resumeItem{\textbf{Building in public:} Grew to \textbf{3,000+ X followers} and \textbf{3.9M impressions} in 3 months, including a \textbf{1.9M-view} launch.}
+    \resumeItem{Ranked AIR \textbf{3449} of 180,000+ in JEE Advanced 2024 and \textbf{99.65} percentile in JEE Main, while solving \textbf{450+} LeetCode problems and reaching a \textbf{1429} Codeforces rating.}
+    \resumeItem{Mentored \textbf{30 students} in open source as a Junior Core Team Member at DevlUp Labs, serving additionally as a Core Member for both the Programming Club and E-Cell.}
   \end{itemize}
 
 \end{document}
+
